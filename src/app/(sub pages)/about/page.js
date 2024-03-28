@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import RenderModel from "../../components/RenderModel";
 import HatModel from "../../../../public/models/Hat-transformed"
 // import LogoPic from "../../../../public/models/Logo"
+// import Fourth from "../../../../public/models/Four";
 import AboutDetails from "@/app/components/about";
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <div className="w-full h-screen absolute top-[60%] -translate-y-1/2 left-0">
       <RenderModel>
           <HatModel />
+          {/* <Fourth /> */}
           {/* <LogoPic /> */}
         </RenderModel>
       

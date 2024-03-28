@@ -4,18 +4,23 @@ import React from "react";
 import bg from "../../public/background/home-background.png"
 import clsx from 'clsx';
 import Navigation from "./components/Navigation";
+// import Yadav from "../../public/models/Home";
 import Wizard from "../../public/models/wizard-transformed.jsx";
 // import Circle from "./components/navigation/CircularText";
 // import HireMe from "./components/HireMe";
 import { extend } from '@react-three/fiber'
+import Rao from "../../public/models/Final";
+import { OrbitControls, TransformControls } from 'three-stdlib'
 
 import AnimatedCursor from "react-animated-cursor";
 
-import { OrbitControls, TransformControls } from 'three-stdlib'
+
 
 extend({ OrbitControls, TransformControls })
 
 import RenderModel from "./components/RenderModel";
+// import Rao from "../../public/models/Final";
+
 export default function Home() {
   return (
     <>
@@ -46,7 +51,9 @@ export default function Home() {
         {}
         <Navigation />
         <RenderModel>
-          <Wizard />
+          {/* <Wizard /> */}
+          {/* <Yadav /> */}
+          <Rao />
           
          
         </RenderModel>
