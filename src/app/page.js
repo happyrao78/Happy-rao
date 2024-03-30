@@ -6,8 +6,8 @@ import clsx from 'clsx';
 import Navigation from "./components/Navigation";
 // import Yadav from "../../public/models/Home";
 import Wizard from "../../public/models/wizard-transformed.jsx";
-// import Circle from "./components/navigation/CircularText";
-// import HireMe from "./components/HireMe";
+
+
 import { extend } from '@react-three/fiber'
 import Rao from "../../public/models/Final";
 import { OrbitControls, TransformControls } from 'three-stdlib'
