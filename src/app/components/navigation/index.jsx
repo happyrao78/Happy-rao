@@ -2,11 +2,12 @@
 import { BtnList } from '@/app/data'
 import React from 'react'
 import NavButton from './NavButton'
+import {motion} from 'framer-motion' 
 const Navigation = () => {
    const angleIncrement = 360 / BtnList.length ;
     return (
         <div className='w-full fixed h-screen flex items-center justify-center'>
-        <div className='w-max flex items-center justify-center relative hover:pause animate-spin-slow group'>
+        <motion.div className='w-max flex items-center justify-center relative hover:pause animate-spin-slow group'>
         {
             BtnList.map((btn,index) => {
                 const angleRad = (index*angleIncrement*Math.PI)/180
@@ -17,7 +18,7 @@ const Navigation = () => {
                
             })
         }
-        </div>
+        </motion.div>
         </div>
     )
 }

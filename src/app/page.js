@@ -9,17 +9,18 @@ import Wizard from "../../public/models/wizard-transformed.jsx";
 
 
 import { extend } from '@react-three/fiber'
-import Rao from "../../public/models/Final";
+// import Rao from "../../public/models/Final";
 import { OrbitControls, TransformControls } from 'three-stdlib'
 
 import AnimatedCursor from "react-animated-cursor";
 
-
+import dynamic from 'next/dynamic'
 
 extend({ OrbitControls, TransformControls })
 
 import RenderModel from "./components/RenderModel";
 // import Rao from "../../public/models/Final";
+const Rao = dynamic(() => import("../../public/models/Final"), { ssr: false })
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
         '.link'
       ]} />
     <main className="flex min-h-screen flex-col items-center justify-between relative">
-      <Image src={bg} alt ="background-image" fill className="w-full h-full object-cover object-center opacity-25"/>
+      <Image priority sizes="100vw" src={bg} alt ="background-image" fill className="w-full h-full object-cover object-center opacity-25"/>
       <div className="w-full h-screen">
         {}
         <Navigation />

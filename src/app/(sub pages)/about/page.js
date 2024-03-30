@@ -9,6 +9,8 @@ import HatModel from "../../../../public/models/Hat-transformed"
 import LogoPic from "../../../../public/models/Logo"
 import Fourth from "../../../../public/models/Four";
 import AboutDetails from "@/app/components/about";
+
+
 export default function Home() {
   return (
     <>
@@ -48,7 +50,7 @@ export default function Home() {
         </RenderModel>
       
       </div>
-      <Image src={happy} alt ="background-image"  className="-z-50  top-[50%]  w-60 height-60  object-center  justify-center items-center left-1/2 mt-10 opacity-75 "/>
+      <Image priority sizes="100vw" src={happy} alt ="background-image"  className="-z-50  top-[50%]  w-60 height-60  object-center  justify-center items-center left-1/2 mt-10 opacity-75 "/>
     <div className="relative w-full h-60 flex flex-col items-center justify-center ">
     
     
