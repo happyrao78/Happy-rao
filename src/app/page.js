@@ -3,9 +3,9 @@ import Image from "next/image";
 import React from "react";
 import bg from "../../public/background/home-background.png"
 import clsx from 'clsx';
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navigation";
 // import Yadav from "../../public/models/Home";
-import Wizard from "../../public/models/wizard-transformed.jsx";
+// import Wizard from "../../public/models/wizard-transformed.jsx";
 
 
 import { extend } from '@react-three/fiber'
@@ -52,7 +52,7 @@ export default function Home() {
         {}
         <Navigation />
         <RenderModel>
-          {/* <Wizard /> */}
+        
           {/* <Yadav /> */}
           <Rao />
           
