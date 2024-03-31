@@ -5,9 +5,9 @@ import bg from "/public/background/about-background.png";
 import happy from "../../../../public/background/logo.png";
 import AnimatedCursor from "react-animated-cursor";
 import RenderModel from "../../components/RenderModel";
-import HatModel from "../../../../public/models/Hat-transformed"
-import LogoPic from "../../../../public/models/Logo"
-import Fourth from "../../../../public/models/Four";
+// import HatModel from "../../../../public/models/Hat-transformed"
+// import LogoPic from "../../../../public/models/Logo"
+// import Fourth from "../../../../public/models/Four";
 import AboutDetails from "@/app/components/about";
 
 
