@@ -40,7 +40,7 @@ export default function Home() {
 
       
     
-      <div className="w-full h-screen absolute top-[60%] -translate-y-1/2 left-0">
+      <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-[60%] -translate-y-1/2 left-0">
       
       <RenderModel>
       
@@ -54,11 +54,11 @@ export default function Home() {
     <div className="relative w-full h-60 flex flex-col items-center justify-center ">
     
     
-    <div className="absolute flex flex-col items-center text-center top-[40%] left-1/2 -translate-y-1/2 -translate-x-1/2" >
+    <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[40%] left-1/2 -translate-y-1/2 -translate-x-1/2" >
     
 
     
-      <h1 className=" mt-8 text-4xl text-accent">"सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः।"</h1>
+      <h1 className="whitespace-nowrap mt-8 text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-accent">"सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः।"</h1>
       <p className="font-light text-foreground mt-8 text-ls">~ May all beings be happy, may all beings be free from illness.</p>
       
     </div>
