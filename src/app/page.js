@@ -40,10 +40,12 @@ export default function Home() {
         ]}
       />
       <main className="flex min-h-screen flex-col items-center justify-center relative">
-        
-          <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <TiAdjustBrightness className="animate-spin-slow text-yellow-300 opacity-30 h-[340px] w-[340px]" />
-          </span>
+      <span className="reveal-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center ">
+          <span className="block text-accent font-semibold text-7xl">THE </span> 
+          <span className="block text-accent font-semibold text-7xl">HARYANVI </span> 
+          <span className="block text-accent font-semibold text-7xl">CODER </span>     
+        </span>                 
+                           
         
         <Image priority sizes="100vw" src={bg} alt="background-image" fill className="w-full h-full object-cover object-center opacity-25" />
         <div className="w-full h-screen">
@@ -59,3 +61,5 @@ export default function Home() {
     </>
   );
 }
+
+{/* <TiAdjustBrightness className="animate-spin-slow text-yellow-300 opacity-30 h-[340px] w-[340px]" /> */}

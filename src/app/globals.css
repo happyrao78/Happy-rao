@@ -49,6 +49,27 @@
 .sanskrit-logo {
   animation: reveal 5s ease forwards;
 }
+.reveal-text {
+  opacity: 0;
+  animation: revealAnimation 10s ease forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(1/2);
+    transform: translateX(1/2);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(1/2);
+  }
+}
+
 
 
 
