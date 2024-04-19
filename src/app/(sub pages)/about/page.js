@@ -58,8 +58,8 @@ export default function Home() {
     
 
     
-      <h1 className="whitespace-nowrap mt-8 text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-accent">"सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः।"</h1>
-      <p className="font-light text-foreground mt-8 text-ls">~ May all beings be happy, may all beings be free from illness.</p>
+      <h1 className="whitespace-nowrap mt-8 text-xl xs:text-2xl sm:text-3xl lg:text-4xl text-accent sanskrit-logo">"सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः।"</h1>
+      <p className="font-light text-foreground mt-8 text-ls hover:text-accent transition ease-in-out duration-500 sanskrit-logo">~ May all beings be happy, may all beings be free from illness.</p>
       
     </div>
     </div>

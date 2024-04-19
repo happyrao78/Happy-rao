@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 
 module.exports = {
   content: [
@@ -28,12 +28,19 @@ module.exports = {
         'spin-reverse':{
           '0%':{transform : 'rotate(0deg)'},
           '100%':{ transform: 'rotate(-360deg)'}
-        }
+        },
+        'spin':{
+          '0%':{transform : 'rotate(0deg)'},
+          '100%':{ transform: 'rotate(360deg)'}
+        },
+        
       },
     
       animation:{
-        'spin-slow': 'spin 40s linear infinite',
+        'spin-slow': 'spin 40s linear infinite ' ,
         'spin-slow-reverse': 'spin-reverse 40s linear infinite',
+        'spin-main':'spin 20s linear infinite',
+        
       },
       screens: {
         xs :'480px'
