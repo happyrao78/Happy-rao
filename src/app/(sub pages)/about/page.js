@@ -4,7 +4,7 @@ import React from "react";
 import bg from "/public/background/about-background.png";
 import happy from "../../../../public/background/logo.png";
 import AnimatedCursor from "react-animated-cursor";
-import RenderModel from "../../components/RenderModel";
+// import RenderModel from "../../components/RenderModel";
 // import HatModel from "../../../../public/models/Hat-transformed"
 // import LogoPic from "../../../../public/models/Logo"
 // import Fourth from "../../../../public/models/Four";
@@ -42,12 +42,12 @@ export default function Home() {
     
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-[60%] -translate-y-1/2 left-0">
       
-      <RenderModel>
+      
       
           {/* <HatModel /> */}
           {/* <Fourth /> */}
           {/* <LogoPic /> */}
-        </RenderModel>
+        
       
       </div>
       <Image priority sizes="100vw" src={happy} alt ="background-image"  className="-z-50  top-[50%]  w-60 height-60  object-center  justify-center items-center left-1/2 mt-10 opacity-75 "/>

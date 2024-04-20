@@ -1,8 +1,8 @@
 import { Environment } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import { TiAdjustBrightness } from 'react-icons/ti';
 import clsx from 'clsx';
 import React, { Suspense } from 'react';
+
 
 const RenderModel = ({ children, className }) => {
     return (
@@ -11,9 +11,7 @@ const RenderModel = ({ children, className }) => {
                 {children}
             </Suspense>
             <Environment preset='dawn' />
-            <div className="absolute top-4 left-4">
-                <TiAdjustBrightness />
-            </div>
+            
         </Canvas>
     );
 }
