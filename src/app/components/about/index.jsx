@@ -60,7 +60,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <img className="w-full h-auto" src="https://github-readme-streak-stats.herokuapp.com?user=happyrao78&theme=dark&hide_border=true&type=png&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B" alt="GitHub Streak" loading='lazy' />
+          <img className="w-full h-auto" src="https://streak-stats.demolab.com/?user=happyrao78&fire=red&date_format=d F[,Y]&theme=transparent&hide_border=true&title_color=FEFE5B&dates=FFFFFF&text_color=FFFFFF&ring=FEFE5B&currStreakNum=FFFFFF&sideLabels=FEFE5B&disable_animations=false&currStreakLabel=FEFE5B&sideNums=FEFE5B" alt="GitHub Streak" loading='lazy' />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6  !p-0"}>
