@@ -20,7 +20,7 @@ export const projectsData = [
   {
     id: 5,
     name: "CEEDCU",
-    description: "Centre for Entrepreneurship Education Development, Chitkara University (CEEDCU) is the department at Chitkara Universoty which helps students to talk about and build their startups. 🎓",
+    description: "Centre for Entrepreneurship Education Development, Chitkara University (CEEDCU) is the department at Chitkara University which helps students to talk about and build their startups. 🎓",
     
     demoLink: "https://ceed.vercel.app",
   },
@@ -37,7 +37,7 @@ export const projectsData = [
     name: "Personal Portfolio",
     description: "An Interactive portfolio website made using Next.JS, Tailwind, Three.JS, EmailJS. 🖥️⚙️",
 
-    demoLink: "https://github.com/happyrao78/Happy-rao.git",
+    demoLink: "https://happyrao.tech",
   },
   {
     id: 2,
