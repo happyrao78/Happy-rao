@@ -41,9 +41,9 @@ export default function Home() {
       />
       <main className="flex min-h-screen flex-col items-center justify-center relative">
       <span className="reveal-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center ">
-          <span className="block text-accent font-semibold text-6xl sm:text-7xl  ">THE </span> 
-          <span className="block text-accent font-semibold text-6xl sm:text-7xl">HARYANVI </span> 
-          <span className="block text-accent font-semibold text-6xl sm:text-7xl">CODER </span>     
+          <span className="block text-accent font-semibold text-5xl sm:text-7xl  ">THE </span> 
+          <span className="block text-accent font-semibold text-5xl sm:text-7xl">HARYANVI </span> 
+          <span className="block text-accent font-semibold text-5xl sm:text-7xl">CODER </span>     
         </span>                 
                            
         
