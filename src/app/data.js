@@ -18,6 +18,14 @@ Websites:
 
 export const projectsData = [
   {
+    id: 4,
+    name: "Student Portal System",
+    description: "Student Portal System is a web-based application developed in ReactJS, Chartjs. The system is designed to manage student data, test scores, and progress.🎓📊",
+    
+    demoLink: "https://student-portal-final.vercel.app",
+  },
+
+  {
     id: 5,
     name: "CEEDCU",
     description: "Centre for Entrepreneurship Education Development, Chitkara University (CEEDCU) is the department at Chitkara University which helps students to talk about and build their startups. 🎓",
@@ -50,9 +58,9 @@ export const projectsData = [
   {
     id: 3,
     name: "Swaad Guru",
-    description: "The restaurant website features a secure login/register system created through XAMPP, MySQL, and PHP. Additional elements include JavaScript, HTML, and CSS for an enhanced user interface.🍕🥘🍴",
+    description: "Swaad Guru is a htmlc, css, and js project which is a basic restaurant website.🍕🥘🍴",
     
-    demoLink: "https://github.com/happyrao78/Restaurant-Nexus.git",
+    demoLink: "https://swaad-guru.vercel.app/",
   },
   {
     id: 4,
@@ -122,6 +130,8 @@ export const BtnList = [
     icon: "resume",
     newTab: true,
   },
+  
 ];
+
 
 
