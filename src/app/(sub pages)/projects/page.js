@@ -40,9 +40,9 @@ export default function Home() {
       <div className="flex items-center justify-center fixed top-16 
       -translate-x-1/2 lg:translate-x-0 -z-10
       left-1/2 lg:top-20 lg:-left-24 h-screen">
-      <RenderModel>
+      {/* <RenderModel>
           <Staff />
-        </RenderModel>
+        </RenderModel> */}
       </div>
     
     </>
