@@ -24,6 +24,7 @@ export default function Contact() {
           'input[type="image"]',
           'label[for]',
           'select',
+          
           'textarea',
           'button',
           '.link'
