@@ -10,7 +10,7 @@ variable: "--font-inter",
 
 export const metadata = {
   title: "Happy Yadav",
-  description: "Coming soon!",
+  description: "This is a personal portfolio website made using react, next.js, tailwindcss, three.js, emailjs. 🖥️⚙️",
 };
 
 export default function RootLayout({ children }) {
