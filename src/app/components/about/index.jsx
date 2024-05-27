@@ -31,7 +31,14 @@ const AboutDetails = () => {
           <h2 className='text-xl md:text-3xl text-accent text-left w-full capitalize'>About</h2>
           <h5 className='text-left w-full capitalize'>| Future Software Engineer & Data Scientist |</h5>
           <p className='font-light text-xs sm:text-sm md:text-base'>
-            As a pre final year college student, I am thrilled to embark on my academic journey and delve into the vast opportunities for personal and professional development. With a solid foundation in Physics, Chemistry, and Mathematics acquired during high school, I have honed critical thinking, problem-solving, and time management skills. Presently, I serve as a technical member of Coding Ninjas at CUIET and contribute as a campus reporter at Chitkara University. Achieving a stellar 10 CGPA in my first semester underscores my commitment to excellence. Currently, I am actively engaged in mastering the MERN stack, eager to expand my expertise in the dynamic field of Information Technology. I am keen to connect with industry professionals, veterans, and mentors to enrich my learning journey further.
+            Upcoming Software Developer & Frontend Specialist with a focus on intuitive UI and engaging digital experiences.
+
+            • Skills & Tools: C, C++, HTML, CSS, JavaScript, React, Tailwind, Next.js, and Git/GitHub.
+            • Position of Responsibilities: Technical Executive @CEEDCU, @Coding Ninjas CUIET , @Campus Reporter at CUIET.
+            • Education: Pre Final Year BCA at Chitkara University (Current CGPA: 9.75), Sharda International School (10th: 96%, 12th PCM: 90%).
+            • Key projects: CEEDCU, HappyMart, SwaadGuru, Student Portal, Personal Portfolio.
+            • Volunteer: Public Relations Volunteer @SelflessSewa NGO, New Delhi.
+            • Achievements: Social Buzz Award at VIHAAN 7.0 hackathon, Open Source Developer at @GSSoC & @SSoC 2024, 1st Prize at Technovanza by CSI CUIET.
           </p>
         </ItemLayout>
 
