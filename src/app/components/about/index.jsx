@@ -31,14 +31,7 @@ const AboutDetails = () => {
           <h2 className='text-xl md:text-3xl text-accent text-left w-full capitalize'>About</h2>
           <h5 className='text-left w-full capitalize'>| Future Software Engineer & Data Scientist |</h5>
           <p className='font-light text-xs sm:text-sm md:text-base'>
-            Upcoming Software Developer & Frontend Specialist with a focus on intuitive UI and engaging digital experiences.
-
-            • Skills & Tools: C, C++, HTML, CSS, JavaScript, React, Tailwind, Next.js, and Git/GitHub.
-            • Position of Responsibilities: Technical Executive @CEEDCU, @Coding Ninjas CUIET , @Campus Reporter at CUIET.
-            • Education: Pre Final Year BCA at Chitkara University (Current CGPA: 9.75), Sharda International School (10th: 96%, 12th PCM: 90%).
-            • Key projects: CEEDCU, HappyMart, SwaadGuru, Student Portal, Personal Portfolio.
-            • Volunteer: Public Relations Volunteer @SelflessSewa NGO, New Delhi.
-            • Achievements: Social Buzz Award at VIHAAN 7.0 hackathon, Open Source Developer at @GSSoC & @SSoC 2024, 1st Prize at Technovanza by CSI CUIET.
+          As an aspiring Software Developer and Frontend Specialist, I excel in creating intuitive user interfaces and engaging digital experiences. My technical skills encompass C, C++, HTML, CSS, JavaScript, React, Tailwind, Next.js, and Git/GitHub. I hold leadership roles as a Technical Executive at CEEDCU and Coding Ninjas CUIET, and serve as a Campus Reporter at CUIET. Currently, I am a pre-final year BCA student at Chitkara University, boasting a CGPA of 9.75, with stellar academic achievements from Sharda International School. My portfolio includes projects like CEEDCU, HappyMart, SwaadGuru, Student Portal, and my Personal Portfolio. I volunteered with SelflessSewa NGO and have been recognized with the Social Buzz Award at VIHAAN 7.0 hackathon. As a top 100 open-source contributor, I was honored to be invited to Microsoft Office Gurgaon. Additionally, I intern at Unsaid Talks, a prominent startup, and have won 1st Prize at Technovanza by CSI CUIET.
           </p>
         </ItemLayout>
 
@@ -50,7 +43,7 @@ const AboutDetails = () => {
 
         <ItemLayout className={'col-span-full xs:col-span-6 lg:col-span-4 text-accent'}>
           <p className='font-semibold w-full text-left text-2xl sm:text-5xl'>
-            <Counter value={354} />+<br></br><sub className='font-semibold text-base'>days of continous learning</sub>
+            <Counter value={1400} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
           </p>
         </ItemLayout>
 

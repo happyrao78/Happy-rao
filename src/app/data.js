@@ -24,6 +24,13 @@ export const projectsData = [
     
     demoLink: "https://student-portal-final.vercel.app",
   },
+  {
+    id: 7,
+    name: "Brain Bazaar",
+    description: "Brain Bazar showcases my practice projects across various tech stacks, focusing on learning and mastering small concepts. It's a hands-on journey through fundamental technologies.🧑‍💻",
+    
+    demoLink: "https://brain-bazaar.vercel.app/",
+  },
 
   {
     id: 5,
