@@ -43,7 +43,7 @@ export default function Home() {
         sizes="100vw"
         src={happy}
         alt="background-image"
-        className={`-z-50 top-[50%] w-60 height-60 rounded-3xl object-center justify-center items-center left-1/2 mt-10 opacity-75 transition-opacity duration-1000 ${
+        className={`-z-50 top-[50%] w-100 h-100 rounded-3xl object-center justify-center items-center left-1/2 mt-10 opacity-95 transition-opacity duration-1000 ${
           imageLoaded ? 'opacity-100 hover:opacity-75 hover:scale-110' : 'opacity-0'
         }`}
         onLoad={() => setImageLoaded(true)}
