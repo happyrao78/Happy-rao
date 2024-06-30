@@ -18,14 +18,21 @@ Websites:
 
 export const projectsData = [
   {
-    id: 4,
+    id: 9,
+    name: "News Mania",
+    description: "NewsMania is a web application which fetches the top business category news headlines from NEWSAPI using a middleware created using Expressjs. It also integrates the google authentication for login/logout. Additionally, Github API is also used for fetching the user data alongwith Web forms integration which will trigger the mail to admin email.📰📧",
+    
+    demoLink: "https://hunar-taupe.vercel.app",
+  },
+  {
+    id: 1,
     name: "Student Portal System",
     description: "Student Portal System is a web-based application developed in ReactJS, Chartjs. The system is designed to manage student data, test scores, and progress.🎓📊",
     
     demoLink: "https://student-portal-final.vercel.app",
   },
   {
-    id: 7,
+    id: 2,
     name: "Brain Bazaar",
     description: "Brain Bazar showcases my practice projects across various tech stacks, focusing on learning and mastering small concepts. It's a hands-on journey through fundamental technologies.🧑‍💻",
     
@@ -33,14 +40,14 @@ export const projectsData = [
   },
 
   {
-    id: 5,
+    id: 3,
     name: "CEEDCU",
     description: "Centre for Entrepreneurship Education Development, Chitkara University (CEEDCU) is the department at Chitkara University which helps students to talk about and build their startups. 🎓",
     
     demoLink: "https://ceed.vercel.app",
   },
   {
-    id: 6,
+    id: 4,
     name: "AALA",
     description: "AALA is an AI-powered system that combines insurance policies, gamification, and advanced analytics. It promotes safer driving behavior by monitoring factors like speed, acceleration, braking, and traffic rule adherence.⚙️",
     
@@ -48,14 +55,14 @@ export const projectsData = [
   },
 
   {
-    id: 1,
+    id: 5,
     name: "Personal Portfolio",
     description: "An Interactive portfolio website made using Next.JS, Tailwind, Three.JS, EmailJS. 🖥️⚙️",
 
     demoLink: "https://happyrao.tech",
   },
   {
-    id: 2,
+    id: 6,
     name: "Happy Mart",
     image: "/public/background/happy.png",
     description: "This project inherit tech stack of HTML, CSS3, JS. HappyMart is basically a live christmas inventories selling website made to allow user to purchase different christmas decoratories.🎄🍬🎁",
@@ -63,14 +70,14 @@ export const projectsData = [
     demoLink: "https://happyrao78.github.io/happymart/",
   },
   {
-    id: 3,
+    id: 7,
     name: "Swaad Guru",
     description: "Swaad Guru is a htmlc, css, and js project which is a basic restaurant website.🍕🥘🍴",
     
     demoLink: "https://swaad-guru.vercel.app/",
   },
   {
-    id: 4,
+    id: 8,
     name: "Note  It Down",
     description: "NoteItDown: 📝 A stylish HTML/CSS todo list project, empowering you to efficiently manage tasks. 🚀 Organize your day effortlessly with intuitive features and a clean interface. Stay productive! 🌟",
   
