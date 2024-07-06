@@ -1,13 +1,16 @@
 'use client'
 import Image from "next/image";
-import React from "react";
+import React, {useState,useEffect} from "react";
 import bg from "../../public/background/home-background.png"
 import clsx from 'clsx';
 import Navigation from "./components/navigation";
 import { extend } from '@react-three/fiber'
+import { motion } from "framer-motion";
 import { OrbitControls, TransformControls } from '@react-three/fiber'
 import AnimatedCursor from "react-animated-cursor";
 import dynamic from 'next/dynamic'
+import Loader from "./components/Loader/loader";
+
 
 extend({ OrbitControls, TransformControls })
 
@@ -15,7 +18,17 @@ import RenderModel from "./components/RenderModel";
 const Rao = dynamic(() => import("../../public/models/Final"), { ssr: false })
 
 export default function Home() {
+  const[loading,setLoading] = useState(true);
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  })
   return (
+    <>
+    {loading ? (
+      <Loader />
+    ): (
     <>
       <AnimatedCursor 
         innerSize={9}
@@ -58,6 +71,8 @@ export default function Home() {
         <orbitControls />
         <transformControls />
       </main>
+      </>
+    )}
     </>
   );
 }

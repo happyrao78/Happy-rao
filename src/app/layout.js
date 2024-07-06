@@ -1,21 +1,33 @@
+"use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from 'clsx';
 import FireFliesBackground from "./components/FireFliesBackground";
 import Sound from "./components/sound"
+import { useEffect, useState } from "react";
+// import { Loader } from "lucide-react";
+import Loader from "./components/Loader/loader";
+import { metadata } from "./components/meta";
 
 const inter = Inter({ subsets: ["latin"],
 variable: "--font-inter",
 });
 
-export const metadata = {
-  title: "Happy Yadav",
-  description: "This is a personal portfolio website made using react, next.js, tailwindcss, three.js, emailjs. 🖥️⚙️",
-  name: "google-site-verification",
-  content: "xib0rnzpGcFXRULeLaNYEFJCECscHeA2Scqv3rGJtfQ",
-};
+// export const metadata = {
+//   title: "Happy Yadav",
+//   description: "This is a personal portfolio website made using react, next.js, tailwindcss, three.js, emailjs. 🖥️⚙️",
+//   name: "google-site-verification",
+//   content: "xib0rnzpGcFXRULeLaNYEFJCECscHeA2Scqv3rGJtfQ",
+// };
 
 export default function RootLayout({ children }) {
+  const [loading,setLoading]= useState(true);
+  useEffect(()=>{
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+    return()=> clearTimeout(timer);
+  },[])
   return (
     <html lang="en">
       <head>
@@ -26,10 +38,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
     
-      <body className={clsx(inter.variable, "bg-background text-foreground font-inter")}>{children}
+      <body className={clsx(inter.variable, "bg-background text-foreground font-inter")}>
+      {loading ? <Loader /> : <Sound />}
+      {children}
       <FireFliesBackground />
-      <Sound />
+    
       <div id="my-modal" />
+      
       </body>
     </html>
   );
