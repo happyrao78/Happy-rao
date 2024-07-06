@@ -10,6 +10,7 @@ import { OrbitControls, TransformControls } from '@react-three/fiber'
 import AnimatedCursor from "react-animated-cursor";
 import dynamic from 'next/dynamic'
 import Loader from "./components/Loader/loader";
+// import Top from "./components/Loader/topLoading";
 
 
 extend({ OrbitControls, TransformControls })
@@ -58,11 +59,13 @@ export default function Home() {
           <span className="block text-accent font-semibold text-5xl sm:text-7xl">HARYANVI </span> 
           <span className="block text-accent font-semibold text-5xl sm:text-7xl">CODER </span>     
         </span>                 
+        {/* <Top /> */}
                            
         
         <Image priority sizes="100vw" src={bg} alt="background-image" fill className="w-full h-full object-cover object-center opacity-25" />
         <div className="w-full h-screen">
           <Navigation />
+          {/* <Top /> */}
           {/* <RenderModel> */}
           {/* <Yadav /> */}
           {/* <Rao /> */}
@@ -71,6 +74,7 @@ export default function Home() {
         <orbitControls />
         <transformControls />
       </main>
+      {/* <Top /> */}
       </>
     )}
     </>
