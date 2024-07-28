@@ -31,6 +31,10 @@ export default function RootLayout({ children }) {
     }, 3000);
     return()=> clearTimeout(timer);
   },[])
+
+  // document.addEventListener("contextmenu", (e)=>{
+  //   e.preventDefault();
+  // },false);
   useEffect(()=>{
     const topLoader = setTimeout(() => {
       setTopLoading(false)
@@ -48,7 +52,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
     
-      <body className={clsx(inter.variable, "bg-background text-foreground font-inter")}>
+      <body  className={clsx(inter.variable, "bg-background text-foreground font-inter")}>
       {loading ? <Loader /> && <Top /> : [<Sound key="sound" /> ,<LoginComp key="login"/>] }
       
       {children}

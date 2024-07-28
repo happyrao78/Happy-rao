@@ -18,6 +18,14 @@ Websites:
 
 export const projectsData = [
   {
+    id: 10,
+    name: "FinTrack",
+    description: "FinTrack is a comprehensive finance management application that allows users to track, visualize, and manage their income and expenses. The application provides features like editing, deleting, and adding transactions, automatic chart state management, theme switching, Google sign-in, monthly navigation, transaction filters, and a responsive UI. The backend server is deployed using Railway.📊💰",
+    
+    demoLink: "https://codolio-three.vercel.app",
+    
+  },
+  {
     id: 9,
     name: "News Mania",
     description: "NewsMania is a web application which fetches the top business category news headlines from NEWSAPI using a middleware created using Expressjs. It also integrates the google authentication for login/logout. Additionally, Github API is also used for fetching the user data alongwith Web forms integration which will trigger the mail to admin email.📰📧",
@@ -64,7 +72,7 @@ export const projectsData = [
   {
     id: 6,
     name: "Happy Mart",
-    image: "/public/background/happy.png",
+   
     description: "This project inherit tech stack of HTML, CSS3, JS. HappyMart is basically a live christmas inventories selling website made to allow user to purchase different christmas decoratories.🎄🍬🎁",
     
     demoLink: "https://happyrao78.github.io/happymart/",

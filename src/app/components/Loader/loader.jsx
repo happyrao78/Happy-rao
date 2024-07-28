@@ -13,8 +13,8 @@ const Loader = () => {
   return (
     <motion.div
     animate={{
-      color: isWhite ? 'black' : 'white',
-      backgroundColor: isWhite ? 'white' : 'black'
+      color: isWhite ? 'white' : 'black',
+      backgroundColor: isWhite ? 'black' : 'white'
     }}
     transition={{type: "spring", stiffness: 15}}
     className='w-full h-svh overflow-hidden flex justify-center items-center transition ease-out duration-500'
