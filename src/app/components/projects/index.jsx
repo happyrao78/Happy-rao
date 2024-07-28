@@ -25,7 +25,7 @@ const ProjectList = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className='w-full max-w-auto xl:max-w-4xl px-4 mx-auto lg:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'
+      className='w-full max-w-auto xl:max-w-5xl px-4 mx-auto lg:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'
     >
       {projectsData.map((project, index) => (
         <motion.div

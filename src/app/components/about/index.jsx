@@ -43,7 +43,7 @@ const AboutDetails = () => {
 
         <ItemLayout className={'col-span-full xs:col-span-6 lg:col-span-4 text-accent'}>
           <p className='font-semibold w-full text-left text-2xl sm:text-5xl'>
-            <Counter value={1500} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
+            <Counter value={1700} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
           </p>
         </ItemLayout>
 

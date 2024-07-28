@@ -10,12 +10,12 @@ const ProjectLayout = ({ name, description, image, date, demoLink }) => {
 
   return (
     <>
-      <div className='w-full max-w-xs mx-auto h-80'>
+      <div className='w-full max-w-xs mx-auto h-60'>
         <div
           className='text-sm md:text-base flex flex-col justify-between h-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg'
         >
           {image && (
-            <div className='w-full h-40 mb-4 relative'>
+            <div className='w-full h-20 mb-4 relative'>
               <Image src={image} alt={name} layout='fill' objectFit='cover' className='rounded-lg' />
             </div>
           )}
@@ -24,7 +24,7 @@ const ProjectLayout = ({ name, description, image, date, demoLink }) => {
             <p className='text-muted flex-1'>
               {description.length > 100 ? `${description.substring(0, 100)}...` : description}
             </p>
-            <div className='mt-2 flex items-center'>
+            <div className=' flex items-center'>
               {description.length > 100 && (
                 <button 
                   onClick={openModal} 
