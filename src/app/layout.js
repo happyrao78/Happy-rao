@@ -31,12 +31,23 @@ export default function RootLayout({ children }) {
     }, 3000);
     return()=> clearTimeout(timer);
   },[])
-
- const disableContext = ()=>{ document.addEventListener("contextmenu", (e)=>{
+  //useeffect is used in order to render this feature in client side only and not in serverside
+useEffect(()=>{
+  const disableContext = ()=>{ 
+    document.addEventListener("contextmenu", (e)=>{
     e.preventDefault();
   },false);
 }
 disableContext();
+
+return  ()=>{
+document.removeEventListener("contextmenu",(e)=>{
+  e.preventDefault();
+},false)
+}
+},[])
+ 
+// disableContext();
   useEffect(()=>{
     const topLoader = setTimeout(() => {
       setTopLoading(false)
