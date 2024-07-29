@@ -32,9 +32,11 @@ export default function RootLayout({ children }) {
     return()=> clearTimeout(timer);
   },[])
 
-  document.addEventListener("contextmenu", (e)=>{
+ const disableContext = ()=>{ document.addEventListener("contextmenu", (e)=>{
     e.preventDefault();
   },false);
+}
+disableContext();
   useEffect(()=>{
     const topLoader = setTimeout(() => {
       setTopLoading(false)
