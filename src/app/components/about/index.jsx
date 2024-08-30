@@ -43,7 +43,7 @@ const AboutDetails = () => {
 
         <ItemLayout className={'col-span-full xs:col-span-6 lg:col-span-4 text-accent'}>
           <p className='font-semibold w-full text-left text-2xl sm:text-5xl'>
-            <Counter value={1700} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
+            <Counter value={1800} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
           </p>
         </ItemLayout>
 
@@ -56,7 +56,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6"}>
-          <img className="w-full h-auto" src=" https://skillicons.dev/icons?i=js,html,css,wasm,arduino,c,cpp,discord,git,github,gmail,instagram,linkedin,mysql,nextjs,npm,php,react,replit,stackoverflow,svg,tailwind,threejs,twitter,vercel,vscode,windows,coffeescript" alt="happy yadav" loading='lazy' />
+          <img className="w-full h-auto" src=" https://skillicons.dev/icons?i=js,html,cssarduino,c,cpp,discord,git,github,gmail,instagram,linkedin,mysql,nextjs,npm,php,react,replit,stackoverflow,svg,tailwind,threejs,twitter,vercel,vscode,windows,python,bun,docker,firebase" alt="happy yadav" loading='lazy' />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
