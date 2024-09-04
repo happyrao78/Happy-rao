@@ -56,7 +56,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6"}>
-          <img className="w-full h-auto" src=" https://skillicons.dev/icons?i=js,html,cssarduino,c,cpp,discord,git,github,gmail,instagram,linkedin,mysql,nextjs,npm,php,react,replit,stackoverflow,svg,tailwind,threejs,twitter,vercel,vscode,windows,python,bun,docker,firebase" alt="happy yadav" loading='lazy' />
+          <img className="w-full h-auto" src=" https://skillicons.dev/icons?i=c,cpp,css,html,js,python,ts,bootstrap,express,fastapi,nextjs,react,redux,tailwindcss,threejs,tensorflow,pytorch,opencv,firebase,mysql,netlify,vercel,git,github,githubactions,docker,arduino" alt="happy yadav" loading='lazy' />
         </ItemLayout>
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
