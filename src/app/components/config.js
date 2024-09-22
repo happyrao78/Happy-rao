@@ -1,18 +1,19 @@
-
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
+// Firebase configuration using environment variables
 const firebaseConfig = {
-    apiKey: "AIzaSyCNOUYGTVzwUZiW0lyQZJZxtcVXyybYPLc",
-    authDomain: "personalportfolio-f0580.firebaseapp.com",
-    projectId: "personalportfolio-f0580",
-    storageBucket: "personalportfolio-f0580.appspot.com",
-    messagingSenderId: "726426998150",
-    appId: "1:726426998150:web:71cc1249260b482c02c807",
-    measurementId: "G-RFQTFNKX9J"
-  };
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+};
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
@@ -20,4 +21,3 @@ const db = getFirestore(app);
 const githubProvider = new GithubAuthProvider();
 
 export { auth, provider, db, githubProvider };
-

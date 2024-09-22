@@ -85,3 +85,21 @@
 
 
    */
+/* Custom scrollbar styles */
+.chatbot-container ::-webkit-scrollbar {
+  width: 3px;
+  padding: 10px; /* Width of the scrollbar */
+}
+
+.chatbot-container ::-webkit-scrollbar-track {
+  background: wheat; /* Background of the scrollbar track */
+}
+
+.chatbot-container ::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges for the scrollbar thumb */
+}
+
+.chatbot-container ::-webkit-scrollbar-thumb:hover {
+  background: #cbbf4f; /* Color of the scrollbar thumb on hover */
+}

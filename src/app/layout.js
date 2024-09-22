@@ -10,6 +10,7 @@ import Loader from "./components/Loader/loader";
 import { metadata } from "./components/meta";
 import Top from "./components/Loader/topLoading";
 import LoginComp from "./components/Login";
+import ChatBot from "./components/ChatBot";
 
 const inter = Inter({ subsets: ["latin"],
 variable: "--font-inter",
