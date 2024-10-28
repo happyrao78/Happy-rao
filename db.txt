@@ -1,0 +1,112 @@
+hello: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "Hello! How can I help you today? \n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "index": 0,
+          "safety_ratings": [
+            {
+              "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_HATE_SPEECH",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_HARASSMENT",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+              "probability": "NEGLIGIBLE"
+            }
+          ]
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 2,
+        "candidates_token_count": 10,
+        "total_token_count": 12
+      }
+    }),
+)
+what is your current role: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "I am a large language model, trained by Google. \n\nMy role is to provide helpful and informative responses to your questions and requests. I can do this by:\n\n* **Generating text:** I can write stories, poems, articles, emails, and more. \n* **Answering questions:** I can answer your questions about a wide range of topics, from factual information to subjective opinions. \n* **Summarizing text:** I can summarize long articles or documents into shorter, more easily digestible summaries.\n* **Translating languages:** I can translate text from one language to another.\n* **Providing information:** I can provide information about a wide range of topics, from current events to historical facts. \n\nOverall, my goal is to be a helpful and informative tool that can assist you with your tasks and queries. \n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "index": 0,
+          "safety_ratings": [
+            {
+              "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_HATE_SPEECH",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_HARASSMENT",
+              "probability": "NEGLIGIBLE"
+            },
+            {
+              "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+              "probability": "NEGLIGIBLE"
+            }
+          ]
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 6,
+        "candidates_token_count": 169,
+        "total_token_count": 175
+      }
+    }),
+)
+can u tell me something about happy yadav from chitkara university: I do not have access to personal information about individuals, including students at Chitkara University. This includes details about their academic performance, personal life, or any other private information. 
+
+To find information about Happy Yadav, you could try:
+
+* **Searching online:** Look for his name on social media platforms like LinkedIn, Facebook, Instagram, or Twitter. 
+* **Contacting Chitkara University:** Reach out to the university's admissions office or student affairs department for inquiries about current students. 
+* **Asking within your network:** If you know anyone at Chitkara University or connected to Happy Yadav, they may be able to provide information.
+
+Remember to be respectful of privacy and avoid sharing personal information without consent. 
+
+who is happy yadav ?: Please provide more context! There are many people named Happy Yadav. To give you a specific answer, I need more information, such as:
+
+* **What field is Happy Yadav in?** (e.g., sports, politics, entertainment, etc.)
+* **Where is Happy Yadav from?** (e.g., a specific country, city, or region)
+* **What is the context of your question?** (e.g., are you looking for information about a specific event or achievement?)
+
+Once you provide more details, I can help you find information about Happy Yadav. 
+
+what did you do  at unsaidtalks ?: As a large language model, I do not have personal experiences or the ability to participate in events like "UnsaidTalks". I am not a person and cannot perform actions in the real world. 
+
+"UnsaidTalks" is likely a specific event or platform that I do not have any information about. 
+
+If you have any other questions or would like to know more about a specific topic, please feel free to ask! 
+

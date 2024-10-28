@@ -1,0 +1,58 @@
+Happy Yadav 
++91-8595864036  | Portfolio   |  happyrao7091@gmail.com  | LinkedIn  |  Github 
+EDUCATION 
+Chitkara University 
+Punjab, India 
+Bachelor of Computer Applications 
+2023-2026 
+WORK  EXPERIENCE 
+Data Analytics Intern 
+Hunar.ai 
+Jun 2024 – Aug 2024 
+• Developed optimized database extraction processes in Retool using SQL, enhancing reporting efficiency by 30% 
+for Hunar.AI’s 20+ clients managing over 100,000 data entries. 
+• Designed and automated Power BI reports, streamlining analytics generation and reducing manual workload by 
+transforming data into actionable insights. 
+• Automated reporting and analytics processes to support Hunar.AI’s mission of transforming high-volume hiring 
+through AI, enabling faster, data-driven decisions for manpower-intensive organizations. 
+Founder’s Office Intern 
+UnsaidTalks 
+    May 2024 – June 2024 
+• Led website development as Project Manager, increasing SEO score from 55 to 76 by resolving Google Search 
+Console errors and optimizing robots.txt and LCP. 
+• Utilized Google Search Console, Google Analytics, Jira, WordPress, and Systeme.io to enhance site 
+performance and user experience. 
+Technical Director 
+Coding Ninjas CUIET 
+February 2024 - Present 
+• Responsible for managing all technical projects, coordinating coding initiatives, and providing team support 
+through code reviews and guidance. 
+• Manage the Coding Ninjas website built on Firebase and Next.js ensuring optimal performance and maintenance. 
+PROJECTS 
+AURA.ai GitHub 
+• Developed AURA.ai, an AI platform that automates video creation from text inputs with summarization, voice-
+over, and multilingual support for enhanced accessibility in education and corporate training.   
+• Integrated quizzes and an analytics dashboard to track user engagement and comprehension through viewership 
+data and quiz performance.   
+• Enabled collaboration with content tools and AURAbot, deploying on a tech stack of React.js, FastAPI, Python and 
+Firebase with CI/CD pipelines for efficiency.   
+NewsMania GitHub 
+• Developed NewsMania, a web application that aggregates Top business news headlines from sources like Times 
+of India using NEWSAPI, integrating Google authentication for user login and leveraging GitHub API to fetch 
+admin data seamlessly. 
+• Utilized a robust tech stack including React with Vite, Tailwind CSS, and Express.js middleware to manage 
+CORS issues, with deployment on Vercel and Railway for efficient frontend and backend hosting. 
+FinTrack Github 
+• Built FinTrack, a finance management application that allows users to track, edit, and visualize income and 
+expenses, featuring Google sign-in, theme switching, and transaction filters.   
+• Leveraged a tech stack of React, Chart.js, and Tailwind CSS for the frontend, with an Express backend deployed 
+on Railway and hosted on Vercel. 
+ ACHIEVEMENTS 
+ 
+• Top 22 Finalist among 700+ Teams & Social Buzz Winner at HackRx 5.0 by Bajaj Finserv. 
+• Finalist and Social Buzz Winner at Vihaan 7.0 by Delhi Technological University, Delhi (DTU).  
+• Invited for Github Field Day at Microsoft, Gurgaon among 670+ applicants across India. 
+• 1st Winner at Technovanza conducted by Computer Society of India, Chitkara University. 
+TECHNICAL  SKILLS 
+Programming Languages: Python, C++, C, JavaScript, SQL, HTML, CSS, TypeScript 
+Libraries and Tools: React, Tailwind, Firebase , Git, Docker, PowerBI, MySql, Retool 

@@ -5,26 +5,40 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import { Bot, X, Mic } from 'lucide-react';
 import { Forward } from 'lucide-react';
+import style from "styled-jsx/style";
+import { data } from "autoprefixer";
 
 const ChatBot = () => {
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState("");
     const [isOpen, setIsOpen] = useState(false);
 
+    // const handleSendMessage = async (message) => {
+    //     setMessages((prev) => [...prev, { text: message, isUser: true }]);
+    //     setInputValue("");
+    //     // Call Gemini API
+    //     try {
+    //         const response = await axios.post("/api/chat", { message });
+    //         const botMessage = response.data.reply; // Adjust according to your API response
+    //         setMessages((prev) => [...prev, { text: botMessage, isUser: false }]);
+    //     } catch (error) {
+    //         console.error("Error fetching response from Gemini:", error);
+    //         setMessages((prev) => [...prev, { text: "Queriot is coming soon!!", isUser: false }]);
+    //     }
+    // };
     const handleSendMessage = async (message) => {
-        setMessages((prev) => [...prev, { text: message, isUser: true }]);
-        setInputValue("");
-
-        // Call Gemini API
-        try {
-            const response = await axios.post("/api/chat", { message });
-            const botMessage = response.data.reply; // Adjust according to your API response
-            setMessages((prev) => [...prev, { text: botMessage, isUser: false }]);
-        } catch (error) {
-            console.error("Error fetching response from Gemini:", error);
-            setMessages((prev) => [...prev, { text: "Queriot is coming soon!!", isUser: false }]);
-        }
-    };
+    if (!message) return; // Prevent sending empty messages
+    setMessages((prev) => [...prev, { text: message, isUser: true }]);
+    setInputValue("");
+    try {
+        const response = await axios.post("http://127.0.0.1:5000/api/chat", { message });
+        const botMessage = response.data.reply;
+        setMessages((prev) => [...prev, { text: botMessage, isUser: false }]);
+    } catch (error) {
+        console.error("Error fetching response from Gemini:", error);
+        setMessages((prev) => [...prev, { text: "Queriot is coming soon!!", isUser: false }]);
+    }
+};
 
     const handleVoiceInput = () => {
         const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
@@ -63,8 +77,12 @@ const ChatBot = () => {
                     </div>
                     <div className="messages flex-grow mb-4 overflow-y-auto">
                         {messages.map((msg, index) => (
-                            <div key={index} className={`message ${msg.isUser ? "text-right" : "text-left"} mb-2`}>
-                                <span className={`inline-block p-2 rounded-lg ${msg.isUser ? "custom-bg text-foreground" : "custom-bg text-foreground"} whitespace-normal break-words max-w-[90%]`}>
+                            <div key={index} className={`message ${msg.isUser ? "text-right" : "text-left"} mb-2`}
+                            style={{ maxWidth: "85%", width: "300px" }} >
+                                <span className={`inline-block p-2 rounded-lg ${msg.isUser ? "custom-bg text-foreground" : "custom-bg text-foreground"} whitespace-normal break-words max-w-[90%]`}
+                                style={{ wordWrap: "break-word", whiteSpace: "normal" }}
+                                
+                                >
                                     {msg.text}
                                 </span>
                             </div>
