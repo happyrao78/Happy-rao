@@ -16,7 +16,7 @@
     "@react-three/fiber": "^8.15.16",
     "axios": "^1.7.7",
     "clsx": "^2.1.0",
-    "firebase": "^10.10.0",
+    "firebase": "^9.17.1",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "next": "14.1.1",
@@ -30,7 +30,7 @@
     "react-top-loading-bar": "^2.3.1",
     "sonner": "^1.4.41",
     "three": "^0.162.0",
-    "undici": "^6.20.1"
+    "undici": "^6.19.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
