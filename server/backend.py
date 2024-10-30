@@ -3,12 +3,16 @@ import fitz  # PyMuPDF
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)  # This will enable CORS for all routes
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Load API key from environment variables
-api_key = "AIzaSyDVtceyk_Cb6Xd50i3EgLFc7jMoUln1h9E"
+api_key = os.getenv("GENAI_API_KEY")
 
 # Configure API key for Google Gemini
 genai.configure(api_key=api_key)

@@ -1,0 +1,6 @@
+os
+fitz
+flask
+flask_cors
+dotenv
+requests

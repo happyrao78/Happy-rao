@@ -3,7 +3,7 @@ import React from "react";
 import { CiVirus } from "react-icons/ci";
 import bg from "/public/background/contact-background.png";
 import AnimatedCursor from "react-animated-cursor";
-import Form from "../../components/contact/form";
+import Form from "../components/contact/form";
 
 export default function Contact() {
   return (

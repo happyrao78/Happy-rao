@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import bg from "/public/background/about-background.png";
-import happy from "../../../../public/background/logo.png";
+import happy from "../../../public/background/logo.png";
 import AnimatedCursor from "react-animated-cursor";
 import AboutDetails from "@/app/components/about";
 
