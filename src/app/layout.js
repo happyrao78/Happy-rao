@@ -33,20 +33,20 @@ export default function RootLayout({ children }) {
     return()=> clearTimeout(timer);
   },[])
   //useeffect is used in order to render this feature in client side only and not in serverside
-useEffect(()=>{
-  const disableContext = ()=>{ 
-    document.addEventListener("contextmenu", (e)=>{
-    e.preventDefault();
-  },false);
-}
-disableContext();
+// useEffect(()=>{
+//   const disableContext = ()=>{ 
+//     document.addEventListener("contextmenu", (e)=>{
+//     e.preventDefault();
+//   },false);
+// }
+// disableContext();
 
-return  ()=>{
-document.removeEventListener("contextmenu",(e)=>{
-  e.preventDefault();
-},false)
-}
-},[])
+// return  ()=>{
+// document.removeEventListener("contextmenu",(e)=>{
+//   e.preventDefault();
+// },false)
+// }
+// },[])
  
 // disableContext();
   useEffect(()=>{
