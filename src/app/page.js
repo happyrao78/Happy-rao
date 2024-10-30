@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import Navigation from "./components/navigation";
 import { extend } from '@react-three/fiber'
 import { motion } from "framer-motion";
-import { OrbitControls, TransformControls } from '@react-three/fiber'
+import { OrbitControls, TransformControls } from '@react-three/drei'
 import AnimatedCursor from "react-animated-cursor";
 import dynamic from 'next/dynamic'
 import Loader from "./components/Loader/loader";
