@@ -68,13 +68,16 @@ const ChatBot = () => {
 
             {/* Chatbot Popup */}
             {isOpen && (
-                <div className="chatbot-container p-4 custom-bg text-foreground border rounded-lg shadow-lg fixed bottom-5 right-5 w-90 max-h-[80vh] flex flex-col z-50">
+                <div className="chatbot-container p-4 custom-bg text-foreground border rounded-lg shadow-lg fixed bottom-5 right-5 w-90 max-h-[80vh] flex flex-col z-50 ">
                     <div className="flex justify-between items-center mb-2">
                         <h2 className="text-xl font text-accent">Queriot</h2>
+                        {/* <h6 className="text-sm">v1.0</h6> */}
                         <button onClick={() => setIsOpen(false)} className="text-foreground">
                             <X size={20} />
                         </button>
+                        
                     </div>
+                    <h6 className="text-xs font text-gray-200 ">"Happy's Custom AI Voice Assisstant"</h6>
                     <div className="messages flex-grow mb-4 overflow-y-auto">
                         {messages.map((msg, index) => (
                             <div key={index} className={`message ${msg.isUser ? "text-right" : "text-left"} mb-2`}
@@ -94,7 +97,7 @@ const ChatBot = () => {
                             className="flex-grow border rounded-l-lg p-2 custom-bg text-foreground"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
-                            placeholder="Type a message..."
+                            placeholder="Your Query Here..."
                         />
                         <button
                             className="custom-bg text-foreground text-white rounded-r-lg px-4"
@@ -106,9 +109,29 @@ const ChatBot = () => {
                             className="ml-2 custom-bg text-foreground text-white rounded-lg p-2"
                             onClick={handleVoiceInput}
                         >
-                            <Mic size={18} color="white" />
+                            <Mic size={18} color="yellow" />
                         </button>
                     </div>
+                    <style jsx>{`
+                        @media (max-width: 385px) {
+                            .chatbot-container {
+                                width: 90vw;
+                                right: 5%;
+                            }
+                            .input-group input {
+                                padding: 6px;
+                                font-size: 14px;
+                            }
+                            .input-group button {
+                                padding: 4px;
+                                margin-left: 4px;
+                            }
+                            .input-group .ml-2 {
+                            
+                                padding: 6px;
+                            }
+                        }
+                    `}</style>
                 </div>
             )}
         </div>
