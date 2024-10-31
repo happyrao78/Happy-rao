@@ -31,7 +31,7 @@ const ChatBot = () => {
     setMessages((prev) => [...prev, { text: message, isUser: true }]);
     setInputValue("");
     try {
-        const response = await axios.post("https://portfolio-backend-ten-indol.vercel.app/api/chat", { message });
+        const response = await axios.post("https://portfolio-backend-yqhq.onrender.com/api/chat", { message });
         const botMessage = response.data.reply;
         setMessages((prev) => [...prev, { text: botMessage, isUser: false }]);
     } catch (error) {
