@@ -77,7 +77,7 @@ const ChatBot = () => {
                         </button>
                         
                     </div>
-                    <h6 className="text-xs font text-gray-200 ">'`&quot;`Happy's Custom AI Voice Assisstant`&quot;`</h6>
+                    <h6 className="text-xs font text-gray-200 ">`&quot;Happy&apos;s Custom AI Voice Assisstant&quot;</h6>
                     <div className="messages flex-grow mb-4 overflow-y-auto">
                         {messages.map((msg, index) => (
                             <div key={index} className={`message ${msg.isUser ? "text-right" : "text-left"} mb-2`}
