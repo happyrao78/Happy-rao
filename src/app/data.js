@@ -19,6 +19,14 @@ Websites:
 export const projectsData = [
   {
     id: 10,
+    name: "AURA.ai",
+    description: "AURA.ai is a cutting-edge AI driven platform designed to Automate video creation from text-based inputs such as brochures or PDFs. It seamlessly integrates interactive quizzes and provides detailed analytics to enhance user engagement. Perfect for education, corporate training, and HR assessments, AURA.ai offers multilingual support and real-time feedback, transforming the way content is delivered.📊💰",
+    
+    demoLink: "https://github.com/happyrao78",
+    
+  },
+  {
+    id: 10,
     name: "FinTrack",
     description: "FinTrack is a comprehensive finance management application that allows users to track, visualize, and manage their income and expenses. The application provides features like editing, deleting, and adding transactions, automatic chart state management, theme switching, Google sign-in, monthly navigation, transaction filters, and a responsive UI. The backend server is deployed using Railway.📊💰",
     

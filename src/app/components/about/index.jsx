@@ -31,7 +31,15 @@ const AboutDetails = () => {
           <h2 className='text-xl md:text-3xl text-accent text-left w-full capitalize'>About</h2>
           <h5 className='text-left w-full capitalize'>| Future Software Engineer & Data Scientist |</h5>
           <p className='font-light text-xs sm:text-sm md:text-base'>
-          As an aspiring Software Developer and Frontend Specialist, I excel in creating intuitive user interfaces and engaging digital experiences. My technical skills encompass C, C++, HTML, CSS, JavaScript, React, Tailwind, Next.js, and Git/GitHub. I hold leadership roles as a Technical Executive at CEEDCU and Coding Ninjas CUIET, and serve as a Campus Reporter at CUIET. Currently, I am a pre-final year BCA student at Chitkara University, boasting a CGPA of 9.75, with stellar academic achievements from Sharda International School. My portfolio includes projects like CEEDCU, HappyMart, SwaadGuru, Student Portal, and my Personal Portfolio. I volunteered with SelflessSewa NGO and have been recognized with the Social Buzz Award at VIHAAN 7.0 hackathon. As a top 100 open-source contributor, I was honored to be invited to Microsoft Office Gurgaon. Additionally, I intern at Unsaid Talks, a prominent startup, and have won 1st Prize at Technovanza by CSI CUIET.
+          "From hackathon stages to real-world solutions, my journey in tech has been about turning challenges into breakthroughs."
+
+Starting as a top 22 finalist in HackRx 5.0 by Bajaj Finserv, where I outshined 700+ teams, I have embraced competitive problem-solving to fuel my development journey. This accomplishment, alongside winning 1st place at Technovanza by the Computer Society of India, has shaped my drive to create impactful, data-driven applications that empower decision-making.
+
+As a Data Analytics Intern at Hunar.ai, I optimized database extraction for over 100,000 data points, boosting reporting efficiency by 30% through SQL automation in Retool and creating Power BI reports that made data insights accessible and actionable. My role as Founders Office Intern at UnsaidTalks allowed me to lead website optimization, enhancing the SEO score from 55 to 76 with targeted strategies using Google Search Console and Analytics. These experiences have sharpened my expertise in data management, automation, and project leadership.
+
+In my current role as Technical Director at Coding Ninjas CUIET, I manage a Firebase/Next.js-powered website and lead technical initiatives for a growing community. My portfolio reflects a deep commitment to versatile, user-focused solutions: AURA.ai, an AI-based video automation platform with voiceover and multilingual support; NewsMania, a news aggregator with seamless Google and GitHub integration; and FinTrack, a finance management tool that visualizes spending patterns.
+
+With a solid foundation in Python, JavaScript, React, SQL, and more, I am excited to connect with other forward-thinkers passionate about pushing the boundaries of data, development, and meaningful tech solutions.
           </p>
         </ItemLayout>
 
