@@ -31,7 +31,7 @@ const AboutDetails = () => {
           <h2 className='text-xl md:text-3xl text-accent text-left w-full capitalize'>About</h2>
           <h5 className='text-left w-full capitalize'>| Future Software Engineer & Data Scientist |</h5>
           <p className='font-light text-xs sm:text-sm md:text-base'>
-          "From hackathon stages to real-world solutions, my journey in tech has been about turning challenges into breakthroughs."
+          From hackathon stages to real-world solutions, my journey in tech has been about turning challenges into breakthroughs.
 
 Starting as a top 22 finalist in HackRx 5.0 by Bajaj Finserv, where I outshined 700+ teams, I have embraced competitive problem-solving to fuel my development journey. This accomplishment, alongside winning 1st place at Technovanza by the Computer Society of India, has shaped my drive to create impactful, data-driven applications that empower decision-making.
 
