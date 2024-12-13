@@ -51,7 +51,7 @@ With a solid foundation in Python, JavaScript, React, SQL, and more, I am excite
 
         <ItemLayout className={'col-span-full xs:col-span-6 lg:col-span-4 text-accent'}>
           <p className='font-semibold w-full text-left text-2xl sm:text-5xl'>
-            <Counter value={2200} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
+            <Counter value={2500} />+<br></br><sub className='font-semibold text-base'>Followers on linkedIn </sub>
           </p>
         </ItemLayout>
 
