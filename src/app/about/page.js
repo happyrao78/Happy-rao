@@ -12,19 +12,39 @@ export default function Home() {
   const [author, setAuthor] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
+  // Dummy quotes for mobile devices
+  const dummyQuotes = [
+    { content: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+    { content: "The purpose of our lives is to be happy.", author: "Dalai Lama" },
+    { content: "Get busy living or get busy dying.", author: "Stephen King" },
+  ];
+
+  // Function to check if the device is mobile based on screen width
+  const isMobileDevice = () => {
+    return typeof window !== "undefined" && window.innerWidth < 768;
+  };
+
   // Fetch the latest quote from an API
   useEffect(() => {
     const fetchQuote = async () => {
-      try {
-        const response = await fetch("https://api.quotable.io/random");
-        const data = await response.json();
-        console.log(data)
-        setQuote(data.content);
-        setAuthor(data.author);
-        setIsLoading(false); // Hide placeholder once the quote is fetched
-      } catch (error) {
-        console.error("Error fetching the quote: ", error);
+      if (isMobileDevice()) {
+        // Use dummy quotes for mobile devices
+        const randomIndex = Math.floor(Math.random() * dummyQuotes.length);
+        const selectedQuote = dummyQuotes[randomIndex];
+        setQuote(selectedQuote.content);
+        setAuthor(selectedQuote.author);
         setIsLoading(false);
+      } else {
+        try {
+          const response = await fetch("https://api.quotable.io/random");
+          const data = await response.json();
+          setQuote(data.content);
+          setAuthor(data.author);
+          setIsLoading(false); // Hide placeholder once the quote is fetched
+        } catch (error) {
+          console.error("Error fetching the quote: ", error);
+          setIsLoading(false);
+        }
       }
     };
 
