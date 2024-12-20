@@ -18,6 +18,7 @@ export default function Home() {
       try {
         const response = await fetch("https://api.quotable.io/random");
         const data = await response.json();
+        console.log(data)
         setQuote(data.content);
         setAuthor(data.author);
         setIsLoading(false); // Hide placeholder once the quote is fetched
@@ -87,7 +88,7 @@ export default function Home() {
           {/* Display loading placeholder until the quote is fetched */}
           {isLoading ? (
             <h1 className="mt-8 text-xl xs:text-xl sm:text-2xl lg:text-2xl text-accent sanskrit-logo">
-              Loading quote...
+              Loading...
             </h1>
           ) : (
             <>
