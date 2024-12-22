@@ -13,8 +13,8 @@ const Loader = () => {
   return (
     <motion.div
     animate={{
-      color: isWhite ? 'white' : 'black',
-      backgroundColor: isWhite ? 'black' : 'white'
+      color: isWhite ? 'black' : 'black',
+      backgroundColor: isWhite ? 'black' : 'black'
     }}
     transition={{type: "spring", stiffness: 15}}
     className='w-full h-svh overflow-hidden flex justify-center items-center transition ease-out duration-500'
@@ -24,7 +24,7 @@ const Loader = () => {
       initial={{ scale: 3 }}
       animate={{ scale: 1 }}
       transition={{ duration: 1.8, delay: 0.1, type: "spring", stiffness: 30 }}
-      className=' xl:text-9xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase font-extrabold font-sans'
+      className=' xl:text-9xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase samarkan-font shiny-text'
     >
       <p>Happy yadav</p>
     </motion.div>

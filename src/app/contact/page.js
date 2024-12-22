@@ -1,11 +1,20 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CiVirus } from "react-icons/ci";
 import bg from "/public/background/contact-background.png";
 import AnimatedCursor from "react-animated-cursor";
 import Form from "../components/contact/form";
+import {auth} from "../components/config"
 
 export default function Contact() {
+  const [isLoggedIn,setIsLoggedIn]= useState(false)
+  useEffect(()=>{
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setIsLoggedIn(!!user);
+    });
+    return () => unsubscribe();
+  },[])
   return (
     <>
       <AnimatedCursor 
@@ -43,7 +52,7 @@ export default function Contact() {
           <h1 className="whitespace-nowrap text-accent font-semibold text-center text-4xl capitalize">Contact Happy Yadav</h1>
           <p className="text-center font-light text-sm xs:text-base">Let&apos;s make a worth connection! Drop your queries / message below and I&apos;ll reply to it as early as possible.</p>
         </div>
-        <Form />
+        <Form isLoggedIn={isLoggedIn} />
       </article>
     </>
   );

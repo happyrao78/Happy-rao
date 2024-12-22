@@ -12,6 +12,7 @@ import dynamic from 'next/dynamic'
 import Loader from "./components/Loader/loader";
 // import Top from "./components/Loader/topLoading";
 import ChatBot from "./components/ChatBot";
+// import RenderModel from "./components/RenderModel";
 
 
 extend({ OrbitControls, TransformControls })
@@ -55,10 +56,10 @@ export default function Home() {
         ]}
       />
       <main className="flex min-h-screen flex-col items-center justify-center relative">
-      <span className="reveal-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center ">
-          <span className="block text-accent font-semibold text-5xl sm:text-7xl  ">THE </span> 
-          <span className="block text-accent font-semibold text-5xl sm:text-7xl">HARYANVI </span> 
-          <span className="block text-accent font-semibold text-5xl sm:text-7xl">CODER </span>     
+      <span className="reveal-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center grid">
+          <span className="block text-accent font text-5xl sm:text-7xl samarkan-font shiny-text ">the</span> 
+          <span className="block text-accent font text-5xl sm:text-7xl samarkan-font shiny-text ">haryanvi</span> 
+          <span className="block text-accent font text-5xl sm:text-7xl samarkan-font shiny-text"> coder</span>     
         </span>                 
         {/* <Top /> */}
                           

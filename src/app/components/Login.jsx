@@ -42,7 +42,7 @@ const LoginComp = () => {
             {showModal && <AuthModal onClose={() => setShowModal(false)} />}
             <div className="flex items-center">
                 {isLoggedIn && user ? (
-                    <p className="mr-2 text-foreground">Welcome, {user.displayName}</p>
+                    <p className="mr-2 text-foreground">Hello, {user.displayName}</p>
                 ) : null}
                 <motion.button
                     onClick={isLoggedIn ? handleLogout : handleLoginClick}
