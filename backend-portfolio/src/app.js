@@ -4,6 +4,9 @@ import cookieparser from "cookie-parser"
 
 const app = express()
 
+app.get("/", (req, res) => {
+    res.send("backend deployed")
+})
 app.use(cors({
     origin : process.env.CORS_ORIGIN,
     credentials: true
