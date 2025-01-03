@@ -11,6 +11,7 @@ import { metadata } from "./components/meta";
 import Top from "./components/Loader/topLoading";
 import LoginComp from "./components/Login";
 import ChatBot from "./components/ChatBot";
+import ProfileCard from "./components/ProfileCard";
 
 const inter = Inter({ subsets: ["latin"],
 variable: "--font-inter",
@@ -70,7 +71,7 @@ export default function RootLayout({ children }) {
       {loading ? <Loader /> && <Top /> : [<Sound key="sound" /> ,<LoginComp key="login"/>] }
       
       {children}
-     
+  
       <FireFliesBackground />
     
       <div id="my-modal" />

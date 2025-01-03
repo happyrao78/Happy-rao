@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import React from "react";
-import bg from "/public/background/projects-background.png";
+import bg from "/public/background/projects.png";
 import AnimatedCursor from "react-animated-cursor";
 import ProjectList from "../components/projects";
 import { projectsData } from "../data";

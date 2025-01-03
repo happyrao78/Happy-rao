@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import React, {useState,useEffect} from "react";
-import bg from "../../public/background/home-background.png"
+import bg from "../../public/background/image.png"
 import clsx from 'clsx';
 import Navigation from "./components/navigation";
 import { extend } from '@react-three/fiber'
@@ -18,6 +18,7 @@ import ChatBot from "./components/ChatBot";
 extend({ OrbitControls, TransformControls })
 
 import RenderModel from "./components/RenderModel";
+import ProfileCard from "./components/ProfileCard";
 const Rao = dynamic(() => import("../../public/models/Final"), { ssr: false })
 
 export default function Home() {
@@ -67,6 +68,7 @@ export default function Home() {
         <Image priority sizes="100vw" src={bg} alt="background-image" fill className="w-full h-full object-cover object-center opacity-25" />
         <div className="w-full h-screen">
           <Navigation />
+          <ProfileCard />
           <ChatBot />
           {/* <Top /> */}
           {/* <RenderModel> */}

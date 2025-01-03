@@ -20,8 +20,8 @@ const ProjectLayout = ({ name, description, image, date, demoLink }) => {
             </div>
           )}
           <div className='flex-1 flex flex-col'>
-            <h2 className='text-foreground font-semibold mb-2'>{name}</h2>
-            <p className='text-muted flex-1'>
+            <h2 className='text-accent uppercase mb-2'>{name}</h2>
+            <p className='text-muted flex-1 text-gray-300'>
               {description.length > 100 ? `${description.substring(0, 100)}...` : description}
             </p>
             <div className=' flex items-center'>
@@ -55,13 +55,13 @@ const ProjectLayout = ({ name, description, image, date, demoLink }) => {
             >
               &times;
             </button>
-            <h2 className='text-foreground font-semibold mb-4'>{name}</h2>
+            <h2 className='text-accent font-semibold mb-4'>{name}</h2>
             {image && (
               <div className='w-full h-48 mb-4 relative'>
                 <Image src={image} alt={name} layout='fill' objectFit='cover' className='rounded-lg' />
               </div>
             )}
-            <p className='text-muted'>{description}</p>
+            <p className='text-muted text-white'>{description}</p>
             <a 
               href={demoLink} 
               target='_blank' 

@@ -38,3 +38,5 @@ next-env.d.ts
 
 .env
 /server/__pycache__
+node_modules
+*.env

@@ -1,4 +1,4 @@
-import { Github, Home, Linkedin, Palette, Phone, Twitter, User, NotebookText,LogInIcon } from "lucide-react";
+import { Github, Home, Linkedin, Palette, Phone, Twitter, User, NotebookText,LogInIcon,Trophy,HandCoins,Handshake, AppWindow, } from "lucide-react";
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -23,6 +23,12 @@ const getIcon = (icon) => {
       return <Twitter className='w-full h-auto' strokeWidth={1.5} />;
     case "resume":
       return <NotebookText className='w-full h-auto' strokeWidth={1.5} />;
+    case "achievements":
+      return <Trophy className='w-full h-auto' strokeWidth={1.5} />;
+    case "services":
+      return <HandCoins className='w-full h-auto' strokeWidth={1.5} />;
+    case "tweets":
+        return <AppWindow className='w-full h-auto' strokeWidth={1.5} />;
       
     default:
       return <Home className='w-full h-auto' strokeWidth={1.5} />;

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { CiVirus } from "react-icons/ci";
-import bg from "/public/background/contact-background.png";
+import bg from "/public/background/contact.png";
 import AnimatedCursor from "react-animated-cursor";
 import Form from "../components/contact/form";
 import {auth} from "../components/config"

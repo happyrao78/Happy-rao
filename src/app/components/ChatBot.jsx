@@ -72,12 +72,12 @@ const ChatBot = () => {
                     <div className="flex justify-between items-center mb-2">
                         <h2 className="text-xl font text-accent">Queriot</h2>
                         {/* <h6 className="text-sm">v1.0</h6> */}
-                        <button onClick={() => setIsOpen(false)} className="text-foreground">
+                        <button onClick={() => setIsOpen(false)} className="text-foreground ">
                             <X size={20} />
                         </button>
                         
                     </div>
-                    <h6 className="text-xs font text-gray-200 ">`&quot;Happy&apos;s Custom AI Voice Assisstant&quot;</h6>
+                    <h6 className="text-xs font text-gray-200 ">Custom AI Voice Assisstant&quot;</h6>
                     <div className="messages flex-grow mb-4 overflow-y-auto">
                         {messages.map((msg, index) => (
                             <div key={index} className={`message ${msg.isUser ? "text-right" : "text-left"} mb-2`}

@@ -19,10 +19,10 @@ const Top = () => {
     // <div className='relative'>
     <>
       <LoadingBar
-        color={"red"}
+        color={"yellow"}
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
-        // className='h-1 fixed top-0 left-0 w-full z-50'
+        className='font-bold top-2 left-0 w-full z-5'
       />
       </>
       

@@ -132,29 +132,32 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
+  // { label: "Home", link: "/", icon: "home", newTab: false },
   // { label: "Login", link: "/", icon: "loginicon", newTab: false },
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
-  {
-    label: "Github",
-    link: "https://github.com/happyrao78",
-    icon: "github",
-    newTab: true,
-  },
-  {
-    label: "LinkedIn",
-    link: "https://www.linkedin.com/in/happy-yadav-16b2a4287/",
-    icon: "linkedin",
-    newTab: true,
-  },
-  {
-    label: "X",
-    link: "https://twitter.com/rao_happy60490",
-    icon: "twitter",
-    newTab: true,
-  },
+  { label: "Achievements", link: "/achievements", icon: "achievements", newTab: false},
+  { label: "Freelance Services", link: "/services", icon: "services", newTab: false},
+  { label :"Tweets", link:"/tweets",icon:"tweets", newTab:false},
+  // {
+  //   label: "Github",
+  //   link: "https://github.com/happyrao78",
+  //   icon: "github",
+  //   newTab: true,
+  // },
+  // {
+  //   label: "LinkedIn",
+  //   link: "https://www.linkedin.com/in/happy-yadav-16b2a4287/",
+  //   icon: "linkedin",
+  //   newTab: true,
+  // },
+  // {
+  //   label: "X",
+  //   link: "https://twitter.com/rao_happy60490",
+  //   icon: "twitter",
+  //   newTab: true,
+  // },
   {
     label: "Professional Synopsis",
     link: "/resume.pdf",

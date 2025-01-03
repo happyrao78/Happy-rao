@@ -30,7 +30,7 @@ useEffect(()=>{
                 return (
                     <div
                  key={firefly.id}
-                className="absolute rounded-full w-[10px] h-[10px] bg-yellow-600 bg-opacity-100 blur-sm"
+                className="absolute rounded-full w-[10px] h-[10px] bg-yellow-400 bg-opacity-100 blur-sm"
                  style={{
                     top: firefly.top,
                     left: firefly.left,
