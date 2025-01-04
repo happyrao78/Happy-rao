@@ -103,26 +103,7 @@ export default function Home() {
       />
 
       {/* Quote Section */}
-      <div className="relative w-full h-60 flex flex-col items-center justify-center">
-        <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[40%] left-1/2 -translate-y-1/2 -translate-x-1/2 max-w-2xl px-4">
-          {/* Display loading placeholder until the quote is fetched */}
-          {isLoading ? (
-            <h1 className="mt-8 text-xl xs:text-xl sm:text-2xl lg:text-2xl text-accent sanskrit-logo">
-              Loading...
-            </h1>
-          ) : (
-            <>
-              {/* Dynamically adjust font size based on quote length */}
-              <h1 className={`mt-28 xs:text-xl sm:text-2xl lg:text-2xl text-accent sanskrit-logo break-words ${getFontSize()}`}>
-                &quot;{quote}&quot;
-              </h1>
-              <p className="font-light text-foreground mt-8 text-sm hover:text-accent transition ease-in-out duration-500 sanskrit-logo">
-                ~ {author}
-              </p>
-            </>
-          )}
-        </div>
-      </div>
+     
 
       <AboutDetails />
     </>
