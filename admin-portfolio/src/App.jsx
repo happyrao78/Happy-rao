@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import Login from "./components/Login";
-import CreateTweet from "./components/Tweet";
-import ListTweets from "./components/ListTweet";
-import Sidebar from "./components/Sidebar"; // Import the Sidebar component
+import Login from "./components/Login.jsx";
+import CreateTweet from "./components/Tweet.jsx";
+import ListTweets from "./components/ListTweet.jsx";
+import Sidebar from "./components/Sidebar.jsx"; // Import the Sidebar component
 
 function App() {
   const [tweets, setTweets] = useState([]);
