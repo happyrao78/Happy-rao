@@ -1,51 +1,22 @@
-// require('dotenv').config({path: './env'})
-import dotenv from "dotenv"
-// import mongoose from "mongoose";
-// import {DB_NAME} from "./constants"
+import dotenv from "dotenv";
 import connectDB from "./db/index.js";
-import { app } from "./app.js";
+import { app } from "./app.js"; // Assuming app is already an instance of express
 
-dotenv.config({
-    path : './.env'
-})
+dotenv.config({ path: './.env' });
 
+// Connect to DB
 connectDB()
-.then(()=>{
-    app.listen(process.env.PORT || 5000, ()=>{
-        console.log(`Server is running on Port ${process.env.PORT}`)
-    })
-    app.get("/",(req,res)=>{
-        res.send("Backend Deployed")
-    })
-    app.on("error",(error)=>{
-        console.log("ERROR",error)
-        throw error
-    })
-})
-.catch((err) =>{
-    console.log("MONGODB Connection Error !!!", err)
-})
+  .then(() => {
+    console.log('MongoDB connected');
 
-/*import express from "express"
+    // Define additional routes if needed
+    app.get("/", (req, res) => {
+      res.send("Backend Deployed");
+    });
+  })
+  .catch((err) => {
+    console.log("MONGODB Connection Error !!!", err);
+  });
 
-const app = express()
-//we will be using iife for db connection
-
-(async()=>{
-    try{
-        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
-        app.on("error",(error)=>{
-            console.log("ERROR:",error);
-            throw error
-        })
-
-        app.listen(process.env.PORT, ()=>{
-            console.log(`App is listening on port ${process.env.PORT}`)
-        })
-    }
-    catch(error){
-        console.error("ERROR:",error)
-        throw error
-    }
-    
-})()*/
+// Export the app as the Vercel handler
+export default app;
