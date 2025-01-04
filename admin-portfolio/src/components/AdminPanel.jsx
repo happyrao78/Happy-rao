@@ -10,7 +10,7 @@ const AdminPanel = ({ userDetails }) => {
     // Fetch tweets for the logged-in user
     const fetchTweets = async () => {
       try {
-        const response = await axios.get(`http://localhost:6969/api/v1/tweets?userId=${userDetails._id}`);
+        const response = await axios.get(`https://happy-rao-backend-admin-panel.vercel.app/api/v1/tweets?userId=${userDetails._id}`);
         setUserTweets(response.data.tweets); // Assuming your API sends an array of tweets
       } catch (error) {
         console.error("Error fetching tweets:", error);

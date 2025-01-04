@@ -28,7 +28,7 @@ const ItemLayout = () => {
   useEffect(() => {
     const fetchTweets = async () => {
       try {
-        const response = await fetch('http://localhost:6969/api/v1/users/listtweets');
+        const response = await fetch('https://happy-rao-backend-admin-panel.vercel.app/api/v1/users/listtweets');
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }

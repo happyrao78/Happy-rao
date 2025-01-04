@@ -32,7 +32,7 @@ const CreateTweet = () => {
       formData.append("hashtags", hashtags.split(",").map((tag) => tag.trim()));
       formData.append("avatar", avatar);
 
-      const response = await fetch("http://localhost:6969/api/v1/users/register", {
+      const response = await fetch("https://happy-rao-backend-admin-panel.vercel.app/api/v1/users/register", {
         method: "POST",
         body: formData,
       });

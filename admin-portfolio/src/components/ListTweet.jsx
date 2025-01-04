@@ -8,7 +8,7 @@ const ListTweets = () => {
   useEffect(() => {
     const fetchTweets = async () => {
       try {
-        const response = await fetch("http://localhost:6969/api/v1/users/listtweets"); // Update this URL if needed
+        const response = await fetch("https://happy-rao-backend-admin-panel.vercel.app/api/v1/users/listtweets"); // Update this URL if needed
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
