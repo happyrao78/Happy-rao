@@ -14,6 +14,9 @@ connectDB()
     app.listen(process.env.PORT || 5000, ()=>{
         console.log(`Server is running on Port ${process.env.PORT}`)
     })
+    app.get("/",(req,res)=>{
+        res.send("Backend Deployed")
+    })
     app.on("error",(error)=>{
         console.log("ERROR",error)
         throw error
