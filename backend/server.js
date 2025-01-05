@@ -12,6 +12,10 @@ const API_KEY = process.env.NEWS_API_KEY; // Use the key stored in .env
 
 app.use(cors()); // Allow cross-origin requests
 
+app.get('/', (req, res) => {
+  res.send('news api working...');
+});
+
 // Fetch technology news from NewsAPI for India
 app.get('/technology-news', async (req, res) => {
   try {
