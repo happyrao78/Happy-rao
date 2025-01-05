@@ -139,7 +139,7 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   { label: "Achievements", link: "/achievements", icon: "achievements", newTab: false},
   { label: "Freelance Services", link: "/services", icon: "services", newTab: false},
-  { label :"Tweets", link:"/tweets",icon:"tweets", newTab:false},
+  { label :"Technical News", link:"/tweets",icon:"tweets", newTab:false},
   // {
   //   label: "Github",
   //   link: "https://github.com/happyrao78",

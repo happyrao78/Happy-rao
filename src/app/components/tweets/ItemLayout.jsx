@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const container = {
@@ -28,28 +27,24 @@ const SkeletonCard = () => (
 );
 
 const ItemLayout = () => {
-  const [tweets, setTweets] = useState([]);
+  const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [sloganIndex, setSloganIndex] = useState(0);
+  const [selectedArticle, setSelectedArticle] = useState(null); // Track the article for the popup
 
   const slogans = [
-    "Oops, slow network! Didn't try Airtel 6G yet?",
-    "Still loading... patience is a virtue!",
-    "Hang tight, we're fetching the best tweets for you!",
+    'Fetching the latest technology news...',
+    'Still loading... please wait!',
+    'Hang tight, the best tech news is on its way!',
   ];
 
   useEffect(() => {
-    const fetchTweets = async () => {
+    const fetchTechNews = async () => {
       try {
-        const response = await fetch('/api/fetchTweets');
-
-        if (!response.ok) {
-          throw new Error(`Error: ${response.statusText}`);
-        }
-
+        const response = await fetch('http://localhost:5000/technology-news');
         const data = await response.json();
-        setTweets(data.tweets || []);
+        setArticles(data.slice(0, 9)); // Fetch only 10 articles
         setLoading(false);
       } catch (err) {
         setError(err.message);
@@ -58,7 +53,7 @@ const ItemLayout = () => {
     };
 
     // Simulate 3 seconds of loading
-    setTimeout(fetchTweets, 10000);
+    setTimeout(fetchTechNews, 3000);
 
     // Change slogans every 3 seconds
     const sloganInterval = setInterval(() => {
@@ -68,24 +63,27 @@ const ItemLayout = () => {
     return () => clearInterval(sloganInterval); // Cleanup interval on component unmount
   }, []);
 
+  // Close the popup
+  const closePopup = () => setSelectedArticle(null);
+
   return (
     <div className="max-w-7xl mx-auto p-6">
-      <h2 className="text-3xl text-center samarkan-font text-accent mb-6">
-        Your Tweets
+      <h2 className="text-6xl  text-center  samarkan-font text-accent mb-6">
+        Tech News
       </h2>
 
       {loading && (
         <p className="text-center text-accent mb-4">{slogans[sloganIndex]}</p>
       )}
 
-      {loading || tweets.length === 0 ? (
+      {loading || articles.length === 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 transition ease-in-out duration-300">
-          {[...Array(6)].map((_, index) => (
+          {[...Array(10)].map((_, index) => (
             <SkeletonCard key={index} />
           ))}
         </div>
       ) : error ? (
-        <p className="text-center text-red-500">Error loading tweets</p>
+        <p className="text-center text-red-500">Error loading articles</p>
       ) : (
         <motion.div
           variants={container}
@@ -93,44 +91,53 @@ const ItemLayout = () => {
           animate="show"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
         >
-          {tweets.map((tweet) => (
+          {articles.map((article, index) => (
             <motion.div
-              key={tweet.id} // Adjust based on your API's tweet ID field
+              key={article.id}
               variants={item}
-              className="flex flex-col rounded-lg overflow-hidden p-4 md:p-6 custom-bg min-h-[300px]"
+              className="flex flex-col rounded-lg overflow-hidden p-2 md:p-6 custom-bg min-h-[200px]"
             >
-              {tweet.avatar && (
-                <div className="w-12 h-12 relative mb-4 rounded-full border-2 border-yellow-400">
-                  <Image
-                    src={tweet.avatar}
-                    alt="Avatar"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-full"
-                  />
-                </div>
-              )}
-              <h3 className="text-accent font-semibold mb-2">{tweet.title}</h3>
-              <p className="text-muted flex-grow text-white">
-                {tweet.description.length > 100
-                  ? `${tweet.description.substring(0, 100)}...`
-                  : tweet.description}
-              </p>
-              {tweet.hashtags && tweet.hashtags.length > 0 && (
-                <div className="flex flex-wrap mt-2">
-                  {tweet.hashtags.map((hashtag, index) => (
-                    <span
-                      key={index}
-                      className="custom-bg text-accent text-xs font-medium mr-2 mb-2 px-4 py-1 rounded-lg uppercase"
-                    >
-                      #{hashtag}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <h3 className="text-white  mb-2">{article.title}</h3>
+              {/* <p className="text-muted flex-grow text-gray-400">
+                {article.description?.length > 1
+                  ? `${article.description.substring(0, 0)}...`
+                  : article.description}
+              </p> */}
+
+              <button
+                onClick={() => setSelectedArticle(article)}
+                className="text-accent font-semibold shiny-text rounded-md custom-bg p-2 mt-4"
+              >
+                Read More
+              </button>
             </motion.div>
           ))}
         </motion.div>
+      )}
+
+      {/* Popup for Full Description */}
+      {selectedArticle && (
+        <div
+          className="fixed inset-0 custom-bg flex justify-center items-center"
+          onClick={closePopup}
+        >
+          <div
+            className="custom-bg rounded-lg p-6 max-w-xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-2xl font-semibold text-accent mb-4">
+              {selectedArticle.title}
+            </h3>
+            <p className="text-muted text-gray-300 mb-4">{selectedArticle.description}</p>
+            <p className="text-muted text-gray-300">{selectedArticle.content}</p>
+            <button
+              className="mt-4 custom-bg  text-accent p-2 rounded-md"
+              onClick={closePopup}
+            >
+              Close
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );

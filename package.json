@@ -38,7 +38,8 @@
     "swiper": "^11.2.0",
     "three": "^0.162.0",
     "twitter-api-v2": "^1.18.2",
-    "undici": "^6.19.7"
+    "undici": "^6.19.7",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
