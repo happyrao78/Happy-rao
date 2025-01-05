@@ -42,7 +42,7 @@ const ItemLayout = () => {
   useEffect(() => {
     const fetchTechNews = async () => {
       try {
-        const response = await fetch('http://localhost:5000/technology-news');
+        const response = await fetch('https://happy-rao-newsapi.vercel.app/technology-news');
         const data = await response.json();
         setArticles(data.slice(0, 9)); // Fetch only 10 articles
         setLoading(false);
