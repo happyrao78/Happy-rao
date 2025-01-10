@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone,Twitter, ShieldClose } from "lucide-react";
 
 const ProfileCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +23,7 @@ const ProfileCard = () => {
         <div
           className="absolute left-4 mt-2 w-72 p-4 custom-bg mr-5 text-white rounded-xl shadow-lg animate-slideDown glow-border z-50"
         >
+        {/* <CircleX className="w-8 h-8 text-gray-500" onClick={() => setIsOpen(!isOpen)} /> */}
           {/* Profile Picture and Name */}
           <div className="flex items-center gap-3 mb-4">
             {/* <img
@@ -30,11 +31,18 @@ const ProfileCard = () => {
               alt="Your Name"
               className="w-12 h-12 rounded-full object-cover border-2 border-gray-300"
             /> */}
+            {/* <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center"> */}
+              {/* <CircleX className="w-8 h-8 text-gray-500" /> */}
+            
             <div>
               <h2 className="text-lg font-semibold shiny-text">Happy Yadav</h2>
               <br></br>
               <span className="text-sm text-gray-400">Full Stack Developer</span>
             </div>
+            {/* <ShieldClose className="w-8 h-8 text-accent ml-24" onClick={() => setIsOpen(!isOpen)} /> */}
+            <button className="absolute top-4 right-2 text-accent" onClick={() => setIsOpen(!isOpen)}>
+            &times;
+            </button>
           </div>
 
           {/* Social Icons */}
@@ -56,6 +64,15 @@ const ProfileCard = () => {
             >
               <Linkedin className="w-5 h-5 text-accent" />
               <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://x.com/rao_happyy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-gray-300"
+            >
+              <Twitter className="w-5 h-5 text-accent" />
+              <span>X</span>
             </a>
             <a
               href="https://chat.whatsapp.com/EAmUG4UlAoT270VYaysvhq"
