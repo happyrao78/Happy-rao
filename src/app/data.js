@@ -140,29 +140,11 @@ export const BtnList = [
   { label: "Achievements", link: "/achievements", icon: "achievements", newTab: false},
   { label: "Freelance Services", link: "/services", icon: "services", newTab: false},
   { label :"Technical News", link:"/tweets",icon:"tweets", newTab:false},
-  // {
-  //   label: "Github",
-  //   link: "https://github.com/happyrao78",
-  //   icon: "github",
-  //   newTab: true,
-  // },
-  // {
-  //   label: "LinkedIn",
-  //   link: "https://www.linkedin.com/in/happy-yadav-16b2a4287/",
-  //   icon: "linkedin",
-  //   newTab: true,
-  // },
-  // {
-  //   label: "X",
-  //   link: "https://twitter.com/rao_happy60490",
-  //   icon: "twitter",
-  //   newTab: true,
-  // },
   {
     label: "Professional Synopsis",
     link: "/resume.pdf",
     icon: "resume",
-    newTab: true,
+    newTab: false,
   },
   
 ];
