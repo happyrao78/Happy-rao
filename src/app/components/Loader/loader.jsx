@@ -5,18 +5,18 @@ import ReactTypingEffect from 'react-typing-effect';
 const PhotoGrid = () => {
   // Sample images representing different categories
   const images = [
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQEGLjYt-qiyzw/feedshare-shrink_800/feedshare-shrink_800/0/1733897433441?e=1739404800&v=beta&t=m8EfUL5y4UllzJC35qbAWwMFtiwJ4iVD2CrZYshNQfE', category: 'abstract' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQFrQwK-HQ49TA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1729534055428?e=1739404800&v=beta&t=5soa4AQ9pqD97SbRgwEm6hmKpZKWglPhZ-w82OgVAfc', category: 'nature' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQGblis5-7u6SQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1729534057497?e=1739404800&v=beta&t=MhArGmL4_T-pSiGCziJz5qbMiwyOVPvpM1d5YIN9Mg8', category: 'space' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQHBDCBIrIHnJQ/feedshare-shrink_800/feedshare-shrink_800/0/1728652376792?e=1739404800&v=beta&t=t62ruh4qco5oic4Bq3TtYAyUIZPRMrZyXfCGIiu6-2Y', category: 'food' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQFRq03W59ln3A/feedshare-shrink_800/feedshare-shrink_800/0/1724060747887?e=1739404800&v=beta&t=WftpwrOGjij65O23m4K1JmUnPeRgURZ67dSifspj3RA', category: 'nature' },
-    { url: 'https://media.licdn.com/dms/image/v2/D4E22AQEH1aM-KmBpOQ/feedshare-shrink_800/feedshare-shrink_800/0/1721764112307?e=1739404800&v=beta&t=ePp_WL0P30nQhn2h5pm9P7urnyZjZxUiKYXGUlxDdHk', category: 'abstract' },
-    { url: 'https://media.licdn.com/dms/image/v2/D4E22AQER2YAp-b7CCg/feedshare-shrink_800/feedshare-shrink_800/0/1721676634950?e=1739404800&v=beta&t=oTtGUD4LuiX7gSRVTL0LKlY1CCjfUN4zvI8eWQDdtfM', category: 'space' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQF8PHBZrhJP-A/feedshare-shrink_1280/feedshare-shrink_1280/0/1719376698138?e=1739404800&v=beta&t=idAlpNL0kRxyYrAsvxA3dHLyTqhcvDNOaWPnw3DK-rQ', category: 'food' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQESe2oYZEbZ7A/feedshare-shrink_1280/feedshare-shrink_1280/0/1712926856139?e=1739404800&v=beta&t=feh6aoJX1DVfTtv06mvtOaIDSOsVZDH6yMrGDfv4f7g', category: 'abstract' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQEGQI3hPSY2_Q/feedshare-shrink_800/feedshare-shrink_800/0/1717402162635?e=1739404800&v=beta&t=1YG-ADfBf7JoLz1jp-eSNku4kTn_cU7ufRBk6M__5Bc', category: 'nature' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQG-Ti3oGqwOXw/feedshare-shrink_1280/feedshare-shrink_1280/0/1713286710025?e=1739404800&v=beta&t=_uBNjxlT_ECRKAdyAWeS7FNMKnLrQYNSWoC57ZDNFTk', category: 'space' },
-    { url: 'https://media.licdn.com/dms/image/v2/D5622AQEeEoUvhRdXsg/feedshare-shrink_1280/feedshare-shrink_1280/0/1717232180015?e=1739404800&v=beta&t=WylByehuOBYs0wEi-AkFujOTUoNcUK7ghZcqk_ToO98', category: 'food' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQFEBYPNwai5bw/feedshare-shrink_2048_1536/B56ZTuroOQHsA4-/0/1739171202913?e=1743033600&v=beta&t=lWmlc09NeDaAo98lAz3a7L1qFgHuSkGTH1qAX49aTCw', category: 'abstract' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQHwhKJmmC0wzw/feedshare-shrink_2048_1536/B56ZS8lzOCHEAs-/0/1738330816136?e=1743033600&v=beta&t=7ZFubt9xUPcPc5ONB8mTVSjcIxsFFT2Bxi5ZbE5pyvk', category: 'nature' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQEGLjYt-qiyzw/feedshare-shrink_800/feedshare-shrink_800/0/1733897433441?e=1743033600&v=beta&t=kk7vaPeMksOGMLKZFZyg0b7MIHELk4evIRR3TeNVYtk', category: 'space' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQGblis5-7u6SQ/feedshare-shrink_800/feedshare-shrink_800/0/1729534057408?e=1743033600&v=beta&t=xArOOZoHhlQ7kS-cptWW9PjpoKI-9X0R280gKT2Xpb8', category: 'food' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQFrQwK-HQ49TA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1729534055428?e=1743033600&v=beta&t=281OCLbtnm-CL7DWHJxXmieLBrdUIEWheK2F_aj5Gmw', category: 'nature' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQFRq03W59ln3A/feedshare-shrink_800/feedshare-shrink_800/0/1724060747887?e=1743033600&v=beta&t=VlYQSwkp64GRer7wJ6y1aaCqQDyMOAbIrQlmOeAUSv4', category: 'abstract' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQEGQI3hPSY2_Q/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1717402162626?e=1743033600&v=beta&t=uleAbl8B51NCFPV2alKqOT7JcuA8QwpJ8dvQLsm65uM', category: 'space' },
+    { url: 'https://media.licdn.com/dms/image/v2/D5622AQGFzsAkx0rJow/feedshare-shrink_800/feedshare-shrink_800/0/1714152608800?e=1743033600&v=beta&t=-wHQw1471Zath0vFGC_T5RKx7PMbwk1hKUpvDzJbwJE', category: 'food' },
+    // { url: 'https://media.licdn.com/dms/image/v2/D5622AQESe2oYZEbZ7A/feedshare-shrink_1280/feedshare-shrink_1280/0/1712926856139?e=1739404800&v=beta&t=feh6aoJX1DVfTtv06mvtOaIDSOsVZDH6yMrGDfv4f7g', category: 'abstract' },
+    // { url: 'https://media.licdn.com/dms/image/v2/D5622AQEGQI3hPSY2_Q/feedshare-shrink_800/feedshare-shrink_800/0/1717402162635?e=1739404800&v=beta&t=1YG-ADfBf7JoLz1jp-eSNku4kTn_cU7ufRBk6M__5Bc', category: 'nature' },
+    // { url: 'https://media.licdn.com/dms/image/v2/D5622AQG-Ti3oGqwOXw/feedshare-shrink_1280/feedshare-shrink_1280/0/1713286710025?e=1739404800&v=beta&t=_uBNjxlT_ECRKAdyAWeS7FNMKnLrQYNSWoC57ZDNFTk', category: 'space' },
+    // { url: 'https://media.licdn.com/dms/image/v2/D5622AQEeEoUvhRdXsg/feedshare-shrink_1280/feedshare-shrink_1280/0/1717232180015?e=1739404800&v=beta&t=WylByehuOBYs0wEi-AkFujOTUoNcUK7ghZcqk_ToO98', category: 'food' },
   ];
 
   return (
