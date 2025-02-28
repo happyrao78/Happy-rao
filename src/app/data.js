@@ -18,6 +18,42 @@ Websites:
 
 export const projectsData = [
   {
+    id: 11,
+    name: "Digital Finserv",
+    description: "Developed a full-stack loan management system using React, Node.js, Express, and MongoDB, featuring realtime EMI calculations, dynamic PDF generation, and automated email notifications, enhancing loan processing efficiency by 40%.Implemented an intuitive admin panel with Material-UI, enabling seamless loan application tracking and processing, reducing manual workload by 50% and improving user experience.",
+    
+    demoLink: "https://digitalfinserv.in/",
+    
+  },
+  {
+    id: 12,
+    name: "ROzgaarHub",
+    description: "Created a FullStack HR portal using React, Node.js, and MongoDB, enabling efficient management of employee,events and applications, with real-time updates via WebSockets, enhancing user engagement by 30%.Implemented responsive design and advanced filtering features, ensuring seamless user experience across devices, and integrated CSV export functionality, improving data handling efficiency by 40%.",
+    
+    demoLink: "https://cn-jobportal-frontend.vercel.app/",
+    
+  },
+  {
+    id: 13,
+    name: "WebAgency",
+    description: "At CodeSphereX, We believe in transforming ideas into impactful digital solutions. With innovation, precision, and creativity, we craft websites, apps, and designs that empower businesses to thrive in the digital age. Your success is our mission. Let's build something amazing together.🚀🌐",
+    
+    demoLink: "https://codespherex.com/",
+    
+  },
+  {
+    id: 14,
+    name: "RogMukta",
+    description: "RogMukta is a web-based application developed in ReactJS, NodeJS, ExpressJS, and MongoDB. The system is designed to manage selling and buying of medicines.🎓📊",
+    demoLink: "https://rogmukta.online/",
+  },
+  {
+    id: 15,
+    name: "Musafir Tribe",
+    description: "Musafir Tribe is a travel website developed in ReactJS, NodeJS, ExpressJS, and MongoDB. The system is designed to manage travel packages and bookings.🎓📊",
+    demoLink: "https://www.musafirtribe.com/",
+  },
+  {
     id: 10,
     name: "AURA.ai",
     description: "AURA.ai is a cutting-edge AI driven platform designed to Automate video creation from text-based inputs such as brochures or PDFs. It seamlessly integrates interactive quizzes and provides detailed analytics to enhance user engagement. Perfect for education, corporate training, and HR assessments, AURA.ai offers multilingual support and real-time feedback, transforming the way content is delivered.📊💰",
