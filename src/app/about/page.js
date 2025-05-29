@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import bg from "/public/background/about-background.png";
-import happy from "../../../public/background/logo.png";
+import happy from "../../../public/background/bg-3.png";
 import AnimatedCursor from "react-animated-cursor";
 import AboutDetails from "@/app/components/about";
 
@@ -96,8 +96,8 @@ export default function Home() {
         sizes="100vw"
         src={happy}
         alt="background-image"
-        className={`-z-50 top-[50%] w-100 h-100 rounded-3xl object-center justify-center items-center left-1/2 mt-10 opacity-95 transition-opacity duration-1000 ${
-          imageLoaded ? 'opacity-100 hover:opacity-75 hover:scale-110' : 'opacity-0'
+        className={`-z-50 top-[40%] w-70 h-70 rounded-3xl object-center justify-center items-center left-1/2 mt-5 opacity-100 transition-opacity duration-1000 ${
+          imageLoaded ? 'opacity-100 ' : 'opacity-0'
         }`}
         onLoad={() => setImageLoaded(true)}
       />
