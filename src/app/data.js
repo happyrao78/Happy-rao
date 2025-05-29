@@ -33,6 +33,7 @@ import stud from "../../public/projects/stud.png"
 import swad from "../../public/projects/swad.png"
 import tribe from "../../public/projects/tribe.png"
 import port from "../../public/projects/port.png"
+import sankalpiq from "../../public/projects/sankalpiq.png"
 // import scrapp from "../../public/projects/scrapp.mp4"
 export const projectsData = [
   {
@@ -70,6 +71,18 @@ export const projectsData = [
     },
     demoLink: "https://yadavhappy.in/projects",
     technologies: ["automation","vector db","fastapi","langchain","twilio","polly","langsmith","selenium"]
+  },
+  {
+    id: 27,
+    name: "Sankalpiq- Building Tomorrow, Today",
+    description: "Sankalpiq is a tech studio focused on building custom AI agents, enterprise automation, and scalable solutions for real-world use cases. From voice-first bots to CRM systems, every build is crafted with system-level thinking. We solve problems across sectors like healthcare, education, NGOs, and startups — without relying on paid tools or bloated platforms. Sankalpiq is where ideas are productised, not just prototyped.",
+    category: "startup",
+    media: {
+      type: "image", // or "video"
+      url: sankalpiq // Add your image/video path here
+    },
+    demoLink: "https://sankalpiq.co.in",
+    technologies: ["automation","vector db","fastapi","langchain","langgraph","pinecone","exotel","twilio","polly","langsmith","selenium","web scrapping","crm/erps","llm-embeddings","RAG","NLP","sarvam.ai"],
   },
   {
     id: 4,
@@ -368,7 +381,7 @@ export const projectCategories = [
   { id: 'fullstack', name: 'Full Stack', count: projectsData.filter(p => p.category === 'fullstack').length },
   { id: 'frontend', name: 'Frontend', count: projectsData.filter(p => p.category === 'frontend').length },
   { id: 'ai-agents/automation', name: 'AI Agents/Automation', count: projectsData.filter(p => p.category === 'ai-agents/automation').length },
-  // { id: 'backend', name: 'Backend', count: projectsData.filter(p => p.category === 'backend').length },
+  { id: 'startup', name: 'Startup', count: projectsData.filter(p => p.category === 'startup').length },
   { id: 'ai', name: 'AI', count: projectsData.filter(p => p.category === 'ai').length }
 ];
 
