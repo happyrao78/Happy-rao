@@ -42,7 +42,7 @@ export const projectsData = [
     category: "ai-agents/automation",
     media: {
       type: "video", // or "video"
-      url: "/public/projects/scrapp.mp4" // Add your image/video path here
+      url: "https://res.cloudinary.com/dxgpsybjw/video/upload/v1748507530/20250529_125807_yhksxb.mp4" // Add your image/video path here
     },
     demoLink: "https://yadavhappy.in/projects",
     technologies: ["python","docker","gemini","cliapp","BeautifulSoup","sqlite3","fastapi","click"]
@@ -114,7 +114,7 @@ export const projectsData = [
     category: "ai-agents/automation",
     media: {
       type: "video", // or "video"
-      url: ecomm // Add your image/video path here
+      url: "https://res.cloudinary.com/dxgpsybjw/video/upload/v1748507786/WhatsApp_Video_2025-05-29_at_14.05.31_82827aac_ld92v0.mp4" // Add your image/video path here
     },
     demoLink: "https://yadavhappy.in/projects",
     technologies: ["exotel","vector db","fastapi","langchain","twilio","polly","langsmith","gemini"]
@@ -237,7 +237,7 @@ export const projectsData = [
       type: "image",
       url: aura
     },
-    demoLink: "https://github.com/happyrao78",
+    demoLink: "https://github.com/happyrao78/aura.ai",
     technologies: ["AI/ML", "Python", "React", "OpenAI API"]
   },
   {
@@ -368,7 +368,7 @@ export const projectCategories = [
   { id: 'fullstack', name: 'Full Stack', count: projectsData.filter(p => p.category === 'fullstack').length },
   { id: 'frontend', name: 'Frontend', count: projectsData.filter(p => p.category === 'frontend').length },
   { id: 'ai-agents/automation', name: 'AI Agents/Automation', count: projectsData.filter(p => p.category === 'ai-agents/automation').length },
-  { id: 'backend', name: 'Backend', count: projectsData.filter(p => p.category === 'backend').length },
+  // { id: 'backend', name: 'Backend', count: projectsData.filter(p => p.category === 'backend').length },
   { id: 'ai', name: 'AI', count: projectsData.filter(p => p.category === 'ai').length }
 ];
 
