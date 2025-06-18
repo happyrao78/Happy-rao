@@ -34,8 +34,21 @@ import swad from "../../public/projects/swad.png"
 import tribe from "../../public/projects/tribe.png"
 import port from "../../public/projects/port.png"
 import sankalpiq from "../../public/projects/sankalpiq.png"
+import automation from "../../public/projects/auto.png"
 // import scrapp from "../../public/projects/scrapp.mp4"
 export const projectsData = [
+  {
+    id: 27,
+    name: "Automation Suite",
+    description: "The Sankalpiq Foundation AI Automation Suite is a comprehensive microservices-based Multiagent designed to automate critical NGO operations through intelligent micro agents. The solution addresses operational bottlenecks by implementing specialized micro-agents that handle specific organizational functions while maintaining seamless integration.",
+    category: "ai-agents/automation",
+    media: {
+      type: "image", // or "video"
+      url: automation // Add your image/video path here
+    },
+    demoLink: "https://sankalpiq.streamlit.app/",
+    technologies: ["oauth","minilm-l6-V2","mermaid","python","docker","gemini-1.5-flash","cli","fastapi","click"]
+  },
   {
     id: 1,
     name: "Scraping Articles",
