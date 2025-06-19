@@ -65,6 +65,20 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="google-site-verification" content={metadata.content} />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MC9Y68T72Z"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MC9Y68T72Z');
+            `,
+          }}
+        />
       </head>
     
       <body  className={clsx(inter.variable, "bg-background text-foreground font-inter")}>
