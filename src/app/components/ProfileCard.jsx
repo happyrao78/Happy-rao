@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Github, Linkedin, Mail, Phone,Twitter, ShieldClose } from "lucide-react";
+import { Github, Linkedin, Mail, Phone,Twitter, ShieldClose,CircleDashedIcon } from "lucide-react";
 
 const ProfileCard = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +55,15 @@ const ProfileCard = () => {
             >
               <Github className="w-5 h-5 text-accent" />
               <span>GitHub</span>
+            </a>
+            <a
+              href="https://topmate.io/happy_yadav10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-gray-300"
+            >
+              <CircleDashedIcon className="w-5 h-5 text-accent" />
+              <span>Topmate</span>
             </a>
             <a
               href="https://www.linkedin.com/in/happy-yadav-16b2a4287/"
